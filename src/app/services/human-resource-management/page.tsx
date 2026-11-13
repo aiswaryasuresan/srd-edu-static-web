@@ -61,10 +61,6 @@ export default function HumanResourceManagementPage() {
         title="Human Resource Management"
         subtitle="Building the Right Team for Educational Excellence"
         description="We help educational institutions build capable teams by connecting them with qualified faculties, school management professionals, educators, trainers, counsellors, mentors and operational support staff."
-        badge={{
-          icon: Sparkles,
-          label: "SRD EDU CORPORATION | HUMAN RESOURCE SOLUTIONS",
-        }}
         breadcrumbs={[
           { label: "Services", href: "/services" },
           { label: "Human Resource Management" },

@@ -58,10 +58,6 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
         title={data.title}
         subtitle={data.tagline}
         description={data.shortDescription}
-        badge={{
-          icon: Sparkles,
-          label: data.corePositioning || "SRD EDU CORPORATION | INSTITUTIONAL SERVICE",
-        }}
         breadcrumbs={[
           { label: "Services", href: "/services" },
           { label: data.title },
