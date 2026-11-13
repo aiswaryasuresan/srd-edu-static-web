@@ -1,0 +1,5 @@
+# Robots.txt for SRD Edu Corporation
+User-agent: *
+Allow: /
+
+Sitemap: https://www.srdedu.com/sitemap.xml
