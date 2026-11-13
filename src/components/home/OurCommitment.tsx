@@ -109,20 +109,20 @@ export default function OurCommitment() {
           </div>
 
           {/* Desktop Flow (sm:flex) */}
-          <div className="hidden sm:flex items-center justify-between max-w-5xl mx-auto bg-black/20 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
+          <div className="hidden sm:flex items-start justify-between max-w-5xl mx-auto bg-black/20 backdrop-blur-sm p-6 rounded-2xl border border-white/10">
             {processSteps.map((step, idx) => (
               <Fragment key={idx}>
-                <div className="flex flex-col items-center text-center shrink-0">
-                  <div className="w-13 h-13 rounded-full bg-white text-[#501C29] flex items-center justify-center shadow-lg hover:scale-105 transition-transform p-3">
+                <div className="w-20 sm:w-24 flex flex-col items-center text-center shrink-0">
+                  <div className="w-14 h-14 rounded-full bg-white text-[#501C29] flex items-center justify-center shadow-lg hover:scale-105 transition-transform p-3">
                     <step.icon className="w-6 h-6 text-[#501C29]" />
                   </div>
-                  <span className="text-xs font-bold text-white mt-2.5 font-['Poppins'] tracking-wide">
+                  <span className="text-xs font-bold text-white mt-2.5 font-['Poppins'] tracking-wide leading-tight">
                     {step.title}
                   </span>
                 </div>
 
                 {idx < processSteps.length - 1 && (
-                  <div className="flex-1 flex items-center justify-center mb-5 min-w-[24px]">
+                  <div className="flex-1 flex items-center justify-center h-14 min-w-[20px]">
                     <ArrowRight className="w-4 h-4 text-[#EFC269] shrink-0" />
                   </div>
                 )}
@@ -133,19 +133,19 @@ export default function OurCommitment() {
           {/* Mobile View: Balanced 2-Row Flow (sm:hidden) */}
           <div className="sm:hidden bg-black/20 p-5 rounded-2xl border border-white/10 space-y-5">
             {/* Row 1: Understand -> Research -> Plan */}
-            <div className="flex items-center justify-between px-1">
+            <div className="flex items-start justify-between px-1">
               {processSteps.slice(0, 3).map((step, idx) => (
                 <Fragment key={idx}>
-                  <div className="flex flex-col items-center text-center w-16 shrink-0">
+                  <div className="flex flex-col items-center text-center w-18 shrink-0">
                     <div className="w-11 h-11 rounded-full bg-white text-[#501C29] flex items-center justify-center shadow-md p-2.5">
                       <step.icon className="w-5 h-5 text-[#501C29]" />
                     </div>
-                    <span className="text-[11px] font-bold text-white mt-1.5 font-['Poppins']">
+                    <span className="text-[11px] font-bold text-white mt-1.5 font-['Poppins'] leading-tight">
                       {step.title}
                     </span>
                   </div>
                   {idx < 2 && (
-                    <div className="flex-1 flex items-center justify-center mb-5">
+                    <div className="flex-1 flex items-center justify-center h-11 min-w-[16px]">
                       <ArrowRight className="w-4 h-4 text-[#EFC269] shrink-0" />
                     </div>
                   )}
@@ -154,19 +154,19 @@ export default function OurCommitment() {
             </div>
 
             {/* Row 2: Connect -> Implement -> Support */}
-            <div className="flex items-center justify-between px-1">
+            <div className="flex items-start justify-between px-1">
               {processSteps.slice(3, 6).map((step, idx) => (
                 <Fragment key={idx}>
-                  <div className="flex flex-col items-center text-center w-16 shrink-0">
+                  <div className="flex flex-col items-center text-center w-18 shrink-0">
                     <div className="w-11 h-11 rounded-full bg-white text-[#501C29] flex items-center justify-center shadow-md p-2.5">
                       <step.icon className="w-5 h-5 text-[#501C29]" />
                     </div>
-                    <span className="text-[11px] font-bold text-white mt-1.5 font-['Poppins']">
+                    <span className="text-[11px] font-bold text-white mt-1.5 font-['Poppins'] leading-tight">
                       {step.title}
                     </span>
                   </div>
                   {idx < 2 && (
-                    <div className="flex-1 flex items-center justify-center mb-5">
+                    <div className="flex-1 flex items-center justify-center h-11 min-w-[16px]">
                       <ArrowRight className="w-4 h-4 text-[#EFC269] shrink-0" />
                     </div>
                   )}

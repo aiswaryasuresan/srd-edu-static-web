@@ -25,6 +25,7 @@ export default function ContactPage() {
         title="Contact SRD Edu Corporation"
         subtitle="Let's Build a Brighter Future Together"
         description="We welcome dialogue with school trustees, college principals, university deans, employers, and educational leaders. Partner with SRD for reliable, professional, and result-oriented solutions."
+        backgroundImage="/images/banner/contact-banner.jpg"
         badge={{
           icon: Sparkles,
           label: "SRD EDU CORPORATION | OFFICIAL CONTACT DESK",

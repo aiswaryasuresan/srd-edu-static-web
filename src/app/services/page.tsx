@@ -54,6 +54,7 @@ export default function MasterServicesPage() {
         title="Comprehensive Services for the Education Ecosystem"
         subtitle="RESEARCH | EDUCATION | PLACEMENT | GOVERNANCE"
         description="SRD Edu Corporation delivers complete institutional solutions across academics, administration, talent, legal compliance, and technological infrastructure. Discover our 12 specialized service divisions below."
+        backgroundImage="/images/banner/services-banner.jpg"
         badge={{
           icon: Sparkles,
           label: "12 Specialized Institutional Divisions",

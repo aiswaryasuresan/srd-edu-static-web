@@ -10,7 +10,7 @@ export const instituteResearchData: BusinessVertical = {
   corePositioning: "Institutional Research Ecosystems & Academic Innovation Architecture",
   iconName: "Microscope",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-research-banner.jpg",
   targetAudiences: [
     "Universities, Deemed Universities & Autonomous Colleges",
     "Academic Research Councils & R&D Dean Offices",
@@ -108,7 +108,7 @@ export const dataAnalyticsData: BusinessVertical = {
   corePositioning: "Institutional Data Governance & Predictive Educational Telemetry",
   iconName: "BarChart3",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-data-banner.jpg",
   targetAudiences: [
     "University Registrars, Vice Chancellors & Governing Boards",
     "School Group Trustees & Managing Directors",
@@ -206,7 +206,7 @@ export const academicProgrammesData: BusinessVertical = {
   corePositioning: "Outcome-Based Curriculum Design & Academic Quality Assurance",
   iconName: "GraduationCap",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-academic-banner.jpg",
   targetAudiences: [
     "School Principals, Academic Coordinators & Curriculum Heads",
     "College Deans, Board of Studies Members & University Councils",
@@ -304,7 +304,7 @@ export const humanResourceData: BusinessVertical = {
   corePositioning: "Complete Human Resource Management & Institutional Workforce Architecture",
   iconName: "Users",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-hr-banner.jpg",
   targetAudiences: [
     "School Boards, Trustees & Management Committees",
     "Principals, Deans & Academic Directors",
@@ -406,7 +406,7 @@ export const skillDevelopmentData: BusinessVertical = {
   corePositioning: "Credit-Aligned Skill Programs & Applied Vocational Ecosystems",
   iconName: "Layers",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-skill-banner.jpg",
   targetAudiences: [
     "Colleges and Universities seeking credit-aligned vocational courses",
     "Schools establishing Atal Tinkering Labs (ATL) and STEM skill centres",
@@ -504,7 +504,7 @@ export const competitiveExamData: BusinessVertical = {
   corePositioning: "Integrated Campus Competitive Coaching & High-Yield Rank Architecture",
   iconName: "Target",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-competitive-banner.jpg",
   targetAudiences: [
     "Schools running Senior Secondary / +2 seeking integrated JEE/NEET tracks",
     "Junior Colleges & Pre-University (PUC) Colleges",
@@ -602,7 +602,7 @@ export const brandingMarketingData: BusinessVertical = {
   corePositioning: "Institutional Identity Architecture & Admission Growth Systems",
   iconName: "Megaphone",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-branding-banner.jpg",
   targetAudiences: [
     "New Educational Campuses launching admissions",
     "Established Schools & Colleges seeking to expand admission reach",
@@ -700,7 +700,7 @@ export const digitalTechnologyData: BusinessVertical = {
   corePositioning: "Digital Campus Transformation & Modern Educational Technology Architecture",
   iconName: "Laptop",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-data-banner.jpg",
   targetAudiences: [
     "School Management investing in Smart Classrooms and hybrid learning",
     "Colleges deploying or upgrading Learning Management Systems (LMS)",
@@ -798,7 +798,7 @@ export const educationConsultancyData: BusinessVertical = {
   corePositioning: "Turnkey Educational Inception, Modernization & Institutional Transformation",
   iconName: "Compass",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-consultancy-banner.jpg",
   targetAudiences: [
     "Philanthropists, Trusts & Corporate Groups planning new schools or colleges",
     "Existing Institutions planning major campus expansion or vertical additions",
@@ -896,7 +896,7 @@ export const documentLegalData: BusinessVertical = {
   corePositioning: "Statutory Regulatory Approvals & Educational Compliance Architecture",
   iconName: "FileCheck2",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-documentation-banner.jpg",
   targetAudiences: [
     "Educational Trusts & Societies establishing new institutions",
     "Schools applying for CBSE, ICSE, State Board, or IB affiliation",
@@ -994,7 +994,7 @@ export const infrastructureFinanceData: BusinessVertical = {
   corePositioning: "Campus Capital Planning & Institutional Financial Sustainability",
   iconName: "Building2",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-infrastructure-banner.jpg",
   targetAudiences: [
     "Educational Trusts planning capital campus construction or expansion",
     "Bursars, CFOs & Finance Committees of schools and colleges",
@@ -1092,7 +1092,7 @@ export const placementAssistanceData: BusinessVertical = {
   corePositioning: "Campus Recruitment Infrastructure & Corporate Talent Linkages",
   iconName: "Briefcase",
   accentColor: "burgundy",
-  heroImage: "/images/hero/campus-building.jpg",
+  heroImage: "/images/banner/service-placement-banner.jpg",
   targetAudiences: [
     "Engineering, Management, Arts, Science & Polytechnic Colleges",
     "University Training & Placement Officers (TPO) and Placement Deans",

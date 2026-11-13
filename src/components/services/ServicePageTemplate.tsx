@@ -54,6 +54,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
         title={data.title}
         subtitle={data.tagline}
         description={data.shortDescription}
+        backgroundImage={data.heroImage || "/images/banner/campus-banner.jpg"}
         breadcrumbs={[
           { label: "Services", href: "/services" },
           { label: data.title },

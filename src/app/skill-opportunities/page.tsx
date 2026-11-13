@@ -53,6 +53,7 @@ export default function SkillOpportunitiesSinglePage() {
         title="Global Skill Opportunities"
         subtitle={skillVerticalData.tagline}
         description="SRD Edu Corporation identifies, researches, curates, and facilitates access to transformative skill programs across technology, behavioral leadership, and practical vocational trades. Explore all categories, student benefits, campus modules, and training formats unified on this single page."
+        backgroundImage="/images/banner/service-skill-banner.jpg"
         breadcrumbs={[{ label: "Skill Opportunities" }]}
       >
         <div className="pt-2 flex flex-wrap gap-4">

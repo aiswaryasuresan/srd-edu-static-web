@@ -78,20 +78,20 @@ export default function WhyAndApproach() {
             </div>
 
             {/* Desktop Flow (sm:flex) */}
-            <div className="hidden sm:flex items-center justify-between pt-4">
+            <div className="hidden sm:flex items-start justify-between pt-4">
               {processSteps.map((step, idx) => (
                 <Fragment key={idx}>
-                  <div className="flex flex-col items-center text-center shrink-0">
+                  <div className="w-18 flex flex-col items-center text-center shrink-0">
                     <div className="w-12 h-12 rounded-full bg-[#501C29] text-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
                       <step.icon className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-[11px] font-bold text-[#241E20] mt-2 font-['Poppins']">
+                    <span className="text-[11px] font-bold text-[#241E20] mt-2 font-['Poppins'] leading-tight">
                       {step.title}
                     </span>
                   </div>
 
                   {idx < processSteps.length - 1 && (
-                    <div className="flex-1 flex items-center justify-center mb-4 min-w-[20px]">
+                    <div className="flex-1 flex items-center justify-center h-12 min-w-[16px]">
                       <ArrowRight className="w-4 h-4 text-[#B8821B] shrink-0" />
                     </div>
                   )}
@@ -102,19 +102,19 @@ export default function WhyAndApproach() {
             {/* Mobile View: Balanced 2-Row Flow (sm:hidden) */}
             <div className="sm:hidden pt-4 space-y-5">
               {/* Row 1: Understand -> Research -> Plan */}
-              <div className="flex items-center justify-between px-2">
+              <div className="flex items-start justify-between px-2">
                 {processSteps.slice(0, 3).map((step, idx) => (
                   <Fragment key={idx}>
                     <div className="flex flex-col items-center text-center w-16 shrink-0">
                       <div className="w-12 h-12 rounded-full bg-[#501C29] text-white flex items-center justify-center shadow-md">
                         <step.icon className="w-5 h-5 text-white" />
                       </div>
-                      <span className="text-[11px] font-bold text-[#241E20] mt-1.5 font-['Poppins']">
+                      <span className="text-[11px] font-bold text-[#241E20] mt-1.5 font-['Poppins'] leading-tight">
                         {step.title}
                       </span>
                     </div>
                     {idx < 2 && (
-                      <div className="flex-1 flex items-center justify-center mb-5">
+                      <div className="flex-1 flex items-center justify-center h-12 min-w-[16px]">
                         <ArrowRight className="w-4 h-4 text-[#B8821B] shrink-0" />
                       </div>
                     )}
@@ -123,19 +123,19 @@ export default function WhyAndApproach() {
               </div>
 
               {/* Row 2: Connect -> Implement -> Support */}
-              <div className="flex items-center justify-between px-2">
+              <div className="flex items-start justify-between px-2">
                 {processSteps.slice(3, 6).map((step, idx) => (
                   <Fragment key={idx}>
                     <div className="flex flex-col items-center text-center w-16 shrink-0">
                       <div className="w-12 h-12 rounded-full bg-[#501C29] text-white flex items-center justify-center shadow-md">
                         <step.icon className="w-5 h-5 text-white" />
                       </div>
-                      <span className="text-[11px] font-bold text-[#241E20] mt-1.5 font-['Poppins']">
+                      <span className="text-[11px] font-bold text-[#241E20] mt-1.5 font-['Poppins'] leading-tight">
                         {step.title}
                       </span>
                     </div>
                     {idx < 2 && (
-                      <div className="flex-1 flex items-center justify-center mb-5">
+                      <div className="flex-1 flex items-center justify-center h-12 min-w-[16px]">
                         <ArrowRight className="w-4 h-4 text-[#B8821B] shrink-0" />
                       </div>
                     )}

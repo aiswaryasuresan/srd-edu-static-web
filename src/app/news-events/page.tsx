@@ -112,6 +112,7 @@ export default function NewsAndEventsPage() {
         title="News & Events"
         subtitle="CORPORATE INTELLIGENCE & CONFERENCES"
         description="Stay informed with official press releases, institutional milestones, statutory compliance advisories, and upcoming academic summits curated by SRD Edu Corporation."
+        backgroundImage="/images/banner/services-banner.jpg"
         badge={{
           icon: Sparkles,
           label: "Corporate Announcements & Calendar",

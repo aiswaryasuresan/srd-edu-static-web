@@ -87,6 +87,7 @@ export default function BlogsPage() {
         title="Blogs & Perspectives"
         subtitle="THOUGHT LEADERSHIP & EDUCATIONAL RESEARCH"
         description="Explore authoritative commentary, practical statutory guides, pedagogical case studies, and corporate perspectives curated by the academic leaders at SRD Edu Corporation."
+        backgroundImage="/images/banner/about-banner.jpg"
         badge={{
           icon: BookOpen,
           label: "Insights & Industry Analysis",

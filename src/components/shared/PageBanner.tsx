@@ -18,6 +18,7 @@ export interface PageBannerProps {
   };
   breadcrumbs?: BreadcrumbItem[];
   children?: React.ReactNode;
+  backgroundImage?: string;
 }
 
 export default function PageBanner({
@@ -27,14 +28,15 @@ export default function PageBanner({
   badge,
   breadcrumbs = [],
   children,
+  backgroundImage = "/images/banner/campus-banner.jpg",
 }: PageBannerProps) {
   return (
     <section className="relative w-full bg-[#521D27] overflow-hidden pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-20 lg:pb-24 border-b border-[#EFC269]/20">
       {/* 1. Full-Width Background Imagery (HD Campus Architecture) */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/images/banner/campus-banner.jpg"
-          alt="SRD Edu Corporation Modern Campus & Educational Institution Facility"
+          src={backgroundImage}
+          alt={typeof title === "string" ? title : "SRD Edu Corporation Modern Campus & Educational Institution Facility"}
           fill
           sizes="100vw"
           quality={100}

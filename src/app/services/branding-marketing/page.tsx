@@ -62,6 +62,7 @@ export default function BrandingMarketingPage() {
         title="Branding & Marketing"
         subtitle="Build Your Identity. Reach the Right Audience. Grow Your Institution."
         description="We help educational institutions build strong brands, improve visibility, connect with prospective students and create meaningful growth through integrated branding and marketing solutions."
+        backgroundImage="/images/banner/service-branding-banner.jpg"
         breadcrumbs={[
           { label: "Services", href: "/services" },
           { label: "Branding & Marketing" },

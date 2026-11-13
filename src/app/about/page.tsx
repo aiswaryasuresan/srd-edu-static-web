@@ -33,6 +33,7 @@ export default function AboutPage() {
         title="About SRD Edu Corporation"
         subtitle={companyInfo.tagline}
         description="SRD Edu Corporation is an educational services and institutional development enterprise offering integrated human resource management, faculty recruitment, operational staffing, global placement, skill programs, and regulatory documentation."
+        backgroundImage="/images/banner/about-banner.jpg"
         badge={{
           icon: ShieldCheck,
           label: "Corporate Profile & Executive Leadership",

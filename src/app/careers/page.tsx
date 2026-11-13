@@ -27,6 +27,7 @@ export default function CareersPage() {
       <PageBanner
         title="Careers & Recruitment Portals"
         description="Whether you are an aspiring graduate seeking career guidance, an educator looking for faculty positions, or an employer looking to source verified candidates—explore our recruitment facilitation pathways."
+        backgroundImage="/images/banner/careers-banner.jpg"
         badge={{
           icon: Sparkles,
           label: "Right Talent. Right Opportunities.",
