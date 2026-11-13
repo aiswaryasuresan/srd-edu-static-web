@@ -2,16 +2,10 @@ import Link from "next/link";
 import {
   CheckCircle2,
   ArrowRight,
-  Sparkles,
-  Users,
-  TrendingUp,
-  GraduationCap,
-  HeartHandshake,
   Phone,
   Mail,
   MapPin,
   Globe,
-  Compass,
 } from "lucide-react";
 import { BusinessVertical } from "@/types";
 import PageBanner from "@/components/shared/PageBanner";
@@ -22,29 +16,6 @@ interface ServicePageTemplateProps {
 }
 
 export default function ServicePageTemplate({ data }: ServicePageTemplateProps) {
-  const pillars = [
-    {
-      title: "Quality Talent",
-      description: "Skilled, verified & experienced professionals.",
-      icon: Users,
-    },
-    {
-      title: "Institution Growth",
-      description: "Building stronger, sustainable educational systems.",
-      icon: TrendingUp,
-    },
-    {
-      title: "Academic Excellence",
-      description: "Supporting measurable learning and institutional outcomes.",
-      icon: GraduationCap,
-    },
-    {
-      title: "Long-Term Partnership",
-      description: "Growing together for enduring institutional success.",
-      icon: HeartHandshake,
-    },
-  ];
-
   return (
     <div className="bg-white">
       {/* =========================================================================
@@ -77,70 +48,6 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
         </div>
       </PageBanner>
 
-      {/* Brochure Visual Section: "Together We Build Better Institutions" (4 Greek Pillars Graphic from Brochure) */}
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-white to-[#FAF8F5] border-b border-stone-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          {/* Top Intro Bar */}
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#501C29]/10 border border-[#501C29]/20 mb-3">
-              <Compass className="w-4 h-4 text-[#501C29]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#501C29]">
-                SRD COMMITMENT & PILLARS
-              </span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins']">
-              Together We Build Better Institutions
-            </h2>
-            <p className="text-sm sm:text-base text-stone-600 mt-2 max-w-2xl mx-auto leading-relaxed">
-              {data.longDescription}
-            </p>
-          </div>
-
-          {/* The 4 Greek Architectural Pillars Diagram (Recreated from Official Brochure Page 6) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {pillars.map((pillar, idx) => {
-              const Icon = pillar.icon;
-              return (
-                <div
-                  key={idx}
-                  className="relative bg-gradient-to-b from-[#501C29] to-[#36111A] text-white rounded-3xl p-7 border-t-4 border-t-[#EFC269] shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group"
-                >
-                  <div>
-                    {/* Top Capital Ornament */}
-                    <div className="w-12 h-12 rounded-2xl bg-white/10 text-[#EFC269] flex items-center justify-center mb-5 border border-white/10 group-hover:scale-110 transition-transform">
-                      <Icon className="w-6 h-6" />
-                    </div>
-
-                    <h3 className="text-lg font-bold font-['Poppins'] text-white group-hover:text-[#EFC269] transition-colors mb-2">
-                      {pillar.title}
-                    </h3>
-
-                    <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
-                      {pillar.description}
-                    </p>
-                  </div>
-
-                  {/* Base Fluting Accent */}
-                  <div className="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-[11px] font-bold text-[#EFC269] uppercase tracking-wider">
-                    <span>Pillar 0{idx + 1}</span>
-                    <Sparkles className="w-3.5 h-3.5" />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Highlight Quote */}
-          <div className="mt-10 max-w-2xl mx-auto text-center">
-            <p className="text-sm sm:text-base font-bold text-[#501C29] italic font-serif">
-              &ldquo;Skilled People. Strong Institutions. Brighter Future.&rdquo;
-            </p>
-          </div>
-
-        </div>
-      </section>
-
       {/* =========================================================================
           FOLD 2: KEY OFFERINGS & SERVICE DISCIPLINES (Brochure Style Cards)
       ========================================================================= */}
@@ -154,8 +61,8 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#241E20] font-['Poppins'] mt-3">
               Comprehensive Service Capabilities
             </h2>
-            <p className="text-sm sm:text-base text-stone-600 mt-2">
-              Every offering is engineered around institutional rigor, compliance transparency, and measurable educational growth.
+            <p className="text-sm sm:text-base text-stone-600 mt-2 max-w-2xl mx-auto leading-relaxed">
+              {data.longDescription}
             </p>
           </div>
 
