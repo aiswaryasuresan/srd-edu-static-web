@@ -2,14 +2,11 @@ import Link from "next/link";
 import {
   CheckCircle2,
   ArrowRight,
-  ShieldAlert,
   Sparkles,
-  Award,
   Users,
   TrendingUp,
   GraduationCap,
   HeartHandshake,
-  Layers,
   Phone,
   Mail,
   MapPin,
@@ -17,7 +14,6 @@ import {
   Compass,
 } from "lucide-react";
 import { BusinessVertical } from "@/types";
-import EnquiryForm from "@/components/forms/EnquiryForm";
 import PageBanner from "@/components/shared/PageBanner";
 import { companyInfo } from "@/data/company";
 
@@ -72,10 +68,10 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
-            href="#enquiry-section"
+            href="#contact-section"
             className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium text-xs sm:text-sm px-6 py-3.5 rounded-xl border border-white/20 transition-all"
           >
-            <span>Partner With SRD</span>
+            <span>Contact Us</span>
           </a>
         </div>
       </PageBanner>
@@ -203,7 +199,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
       </section>
 
       {/* =========================================================================
-          FOLD 3: OUR WORK PROCESS (6-Step Brochure Workflow Timeline)
+          FOLD 3: OUR WORK PROCESS (4-Step Brochure Workflow)
       ========================================================================= */}
       <section className="py-16 sm:py-20 bg-[#FAF8F5] border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -240,102 +236,121 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
       </section>
 
       {/* =========================================================================
-          FOLD 4: REGISTRATION & DIRECT COMPANY CONTACT BLOCK
+          FOLD 4: DIRECT CONTACT INFORMATION (Form Removed; Contact & Email Only)
       ========================================================================= */}
-      <section id="enquiry-section" className="py-16 sm:py-24 bg-white scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <section id="contact-section" className="py-16 sm:py-24 bg-white scroll-mt-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm text-center">
             
-            {/* Left: Contact Card Directly from Brochure Page 8 */}
-            <div className="lg:col-span-5 space-y-6">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#9A6715] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
-                  OFFICIAL CONTACT DESK
-                </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#241E20] font-['Poppins'] mt-3">
-                  Let&apos;s Build Together
-                </h2>
-                <p className="text-xs sm:text-sm text-stone-600 mt-2 leading-relaxed">
-                  Partner with SRD Edu Corporation for reliable, professional, and result-oriented institutional solutions.
-                </p>
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#9A6715] bg-[#FFF7E6] px-3.5 py-1.5 rounded-full border border-[#EFC269]/40 mb-4">
+              CONTACT US FOR {data.title.toUpperCase()}
+            </span>
+
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mb-3">
+              Let&apos;s Build Together
+            </h2>
+
+            <p className="text-sm sm:text-base text-stone-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+              Partner with SRD Edu Corporation for reliable, professional, and result-oriented institutional solutions. Reach out directly to our advisory desk.
+            </p>
+
+            {/* Direct Contact Grid: Phone, Email, Website, Office Address */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              
+              {/* Phone */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
+                  <a
+                    href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
+                    className="font-bold text-base text-[#501C29] hover:underline"
+                  >
+                    {companyInfo.contact.phone}
+                  </a>
+                </div>
               </div>
 
-              {/* Company Info Box */}
-              <div className="bg-[#FAF8F5] p-6 sm:p-7 rounded-3xl border border-stone-200 space-y-4">
-                <h3 className="text-base font-bold text-[#501C29] font-['Poppins'] uppercase tracking-wider border-b border-stone-200 pb-2">
-                  {companyInfo.name}
-                </h3>
-
-                <div className="space-y-3.5 text-xs sm:text-sm text-[#241E20]">
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-[#501C29] shrink-0" />
-                    <div>
-                      <span className="text-stone-500 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
-                      <a href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`} className="font-semibold text-[#501C29] hover:underline">
-                        {companyInfo.contact.phone}
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-4 h-4 text-[#501C29] shrink-0" />
-                    <div>
-                      <span className="text-stone-500 block text-[11px] font-bold uppercase">Official Email</span>
-                      <a href={`mailto:${companyInfo.contact.email}`} className="font-semibold text-[#501C29] hover:underline">
-                        {companyInfo.contact.email}
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <Globe className="w-4 h-4 text-[#501C29] shrink-0" />
-                    <div>
-                      <span className="text-stone-500 block text-[11px] font-bold uppercase">Website</span>
-                      <a href={`https://${companyInfo.contact.website}`} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#501C29] hover:underline">
-                        {companyInfo.contact.website}
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 pt-1">
-                    <MapPin className="w-4 h-4 text-[#501C29] shrink-0 mt-0.5" />
-                    <div>
-                      <span className="text-stone-500 block text-[11px] font-bold uppercase">Registered Office</span>
-                      <p className="text-stone-600 leading-relaxed text-xs">
-                        {companyInfo.contact.address}
-                      </p>
-                    </div>
-                  </div>
+              {/* Email */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Mail className="w-5 h-5" />
                 </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
+                  <a
+                    href={`mailto:${companyInfo.contact.email}`}
+                    className="font-bold text-sm text-[#501C29] hover:underline block truncate max-w-[200px]"
+                  >
+                    {companyInfo.contact.email}
+                  </a>
+                </div>
+              </div>
 
-                <div className="pt-3 border-t border-stone-200">
-                  <p className="text-xs font-bold text-[#501C29] italic font-serif">
-                    &ldquo;Your Success, Our Mission&rdquo;
+              {/* Website */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Globe className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Website</span>
+                  <a
+                    href={`https://${companyInfo.contact.website}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-sm text-[#501C29] hover:underline"
+                  >
+                    {companyInfo.contact.website}
+                  </a>
+                </div>
+              </div>
+
+              {/* Office Address */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Office Address</span>
+                  <p className="text-xs text-stone-700 leading-relaxed font-medium">
+                    {companyInfo.contact.address}
                   </p>
                 </div>
               </div>
+
             </div>
 
-            {/* Right: Registration / Consultation Form */}
-            <div className="lg:col-span-7">
-              <div className="bg-[#FAF8F5] p-6 sm:p-10 rounded-3xl border border-stone-200 shadow-sm">
-                <div className="mb-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#241E20] font-['Poppins']">
-                    Request {data.title} Consultation
-                  </h3>
-                  <p className="text-xs sm:text-sm text-stone-600 mt-1">
-                    Complete this brief form to connect directly with our advisory specialists.
-                  </p>
-                </div>
+            {/* Direct Action Buttons: Call & Email */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
+                className="inline-flex items-center gap-2 bg-[#501C29] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call Us Now</span>
+              </a>
 
-                <EnquiryForm
-                  initialService={data.title}
-                  sourceContext={`Service Page: ${data.title}`}
-                />
-              </div>
+              <a
+                href={`mailto:${companyInfo.contact.email}`}
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-100 text-[#501C29] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Email Our Team</span>
+              </a>
+            </div>
+
+            {/* Tagline */}
+            <div className="mt-8 pt-6 border-t border-stone-200">
+              <p className="text-xs sm:text-sm font-bold text-[#501C29] italic font-serif">
+                &ldquo;Your Success, Our Mission — Skilled People • Strong Institutions • Brighter Future&rdquo;
+              </p>
             </div>
 
           </div>
+
         </div>
       </section>
     </div>

@@ -25,7 +25,6 @@ import {
   Megaphone,
 } from "lucide-react";
 import PageBanner from "@/components/shared/PageBanner";
-import EnquiryForm from "@/components/forms/EnquiryForm";
 
 export const metadata: Metadata = {
   title: "Human Resource Management Services | SRD Edu Corporation",
@@ -1198,121 +1197,120 @@ export default function HumanResourceManagementPage() {
 
 
       {/* =========================================================================
-          10. CONTACT INFORMATION & ENQUIRY FORM
+          10. CONTACT INFORMATION (Form Removed; Direct Contact & Email Only)
       ========================================================================= */}
-      <section id="contact-info" className="py-16 sm:py-24 bg-[#FAF7F5] border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <section id="contact-info" className="py-16 sm:py-24 bg-[#FAF7F5] border-t border-gray-200 scroll-mt-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm text-center">
             
-            {/* Left: Official Contact Card */}
-            <div className="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl border border-gray-200 shadow-xl space-y-6">
-              
-              <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
-                  CONTACT INFORMATION
-                </span>
-                <h3 className="text-2xl font-black text-[#501C29] font-['Poppins'] mt-3">
-                  SRD EDU CORPORATION
-                </h3>
-                <p className="text-xs font-bold text-[#B8821B] uppercase tracking-wider mt-1">
-                  Research | Education | Placement
-                </p>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  The Complete Educational Services Partner.
-                </p>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#501C29]/10 border border-[#501C29]/20 mb-4">
+              <Phone className="w-4 h-4 text-[#501C29]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#501C29]">
+                Connect With Our HR Advisory Team
+              </span>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mb-3">
+              Let&apos;s Build Your Team Together
+            </h2>
+
+            <p className="text-sm sm:text-base text-stone-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+              Partner with SRD for reliable, professional, and result-oriented educational HR solutions. Reach out directly to our institutional staffing desk.
+            </p>
+
+            {/* Direct Contact Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              {/* Phone */}
+              <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
+                  <a
+                    href="tel:+919036041206"
+                    className="font-bold text-base text-[#501C29] hover:underline"
+                  >
+                    +91 90360 41206
+                  </a>
+                </div>
               </div>
 
-              {/* Contact Items */}
-              <div className="space-y-4 pt-2 border-t border-gray-100 text-sm text-gray-700">
-                
-                {/* Phone */}
-                <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#501C29]/10 text-[#501C29] flex items-center justify-center shrink-0">
-                    <Phone className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-gray-400 uppercase block">Phone / WhatsApp</span>
-                    <a href="tel:+919036041206" className="font-semibold text-[#1C1917] hover:text-[#501C29] transition-colors">
-                      +91 90360 41206
-                    </a>
-                  </div>
+              {/* Email */}
+              <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Mail className="w-5 h-5" />
                 </div>
-
-                {/* Email */}
-                <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#501C29]/10 text-[#501C29] flex items-center justify-center shrink-0">
-                    <Mail className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-gray-400 uppercase block">Email</span>
-                    <a href="mailto:srdecducorp@gmail.com" className="font-semibold text-[#1C1917] hover:text-[#501C29] transition-colors">
-                      srdecducorp@gmail.com
-                    </a>
-                  </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
+                  <a
+                    href="mailto:srdecducorp@gmail.com"
+                    className="font-bold text-sm text-[#501C29] hover:underline block truncate max-w-[200px]"
+                  >
+                    srdecducorp@gmail.com
+                  </a>
                 </div>
-
-                {/* Website */}
-                <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#501C29]/10 text-[#501C29] flex items-center justify-center shrink-0">
-                    <Globe className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-gray-400 uppercase block">Website</span>
-                    <a href="https://srdeducorp.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#1C1917] hover:text-[#501C29] transition-colors">
-                      srdeducorp.com
-                    </a>
-                  </div>
-                </div>
-
-                {/* Address */}
-                <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-xl bg-[#501C29]/10 text-[#501C29] flex items-center justify-center shrink-0 mt-0.5">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-gray-400 uppercase block">Address</span>
-                    <p className="font-medium text-[#1C1917] leading-relaxed">
-                      DF Creations, #122, 3rd Floor,<br />
-                      Opposite Brigade Tower,<br />
-                      Brigade Road, Woodstreet,<br />
-                      Bangalore – 560025.
-                    </p>
-                  </div>
-                </div>
-
               </div>
 
-              {/* Final Tagline Callout */}
-              <div className="pt-4 border-t border-gray-100">
-                <div className="p-4 rounded-xl bg-[#FFF7E6] border border-[#F5C64D]/40 text-center">
-                  <p className="text-xs sm:text-sm font-extrabold text-[#501C29] font-['Poppins']">
-                    &ldquo;Qualified People. Strong Institutions. Brighter Future.&rdquo;
+              {/* Website */}
+              <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Globe className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Website</span>
+                  <a
+                    href="https://srdeducorp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-sm text-[#501C29] hover:underline"
+                  >
+                    srdeducorp.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Office Address</span>
+                  <p className="text-xs text-stone-700 leading-relaxed font-medium">
+                    DF Creations, #122, 3rd Floor, Opposite Brigade Tower, Brigade Road, Woodstreet, Bangalore – 560025.
                   </p>
                 </div>
               </div>
-
             </div>
 
-            {/* Right: Institutional Staffing Enquiry Form */}
-            <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-gray-200 shadow-xl">
-              <div className="mb-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
-                  STAFFING INQUIRY
-                </span>
-                <h3 className="text-2xl font-bold text-[#501C29] font-['Poppins'] mt-2">
-                  Request an Institutional HR Consultation
-                </h3>
-                <p className="text-xs sm:text-sm text-gray-600 mt-1">
-                  Tell us about your faculty, management, training, or operational staffing needs. Our educational HR advisory team will contact you promptly.
-                </p>
-              </div>
+            {/* Direct Action Buttons: Call & Email */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="tel:+919036041206"
+                className="inline-flex items-center gap-2 bg-[#501C29] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call Us Now</span>
+              </a>
 
-              <EnquiryForm initialService="Human Resource & Faculty Staffing" sourceContext="HR Management Service Page" />
+              <a
+                href="mailto:srdecducorp@gmail.com"
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-[#501C29] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Email Our Team</span>
+              </a>
+            </div>
+
+            {/* Final Tagline Callout */}
+            <div className="mt-8 pt-6 border-t border-stone-200">
+              <p className="text-xs sm:text-sm font-bold text-[#501C29] italic font-serif">
+                &ldquo;Your Success, Our Mission — Qualified People • Strong Institutions • Brighter Future&rdquo;
+              </p>
             </div>
 
           </div>
-
         </div>
       </section>
 

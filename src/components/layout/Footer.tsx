@@ -6,12 +6,9 @@ import {
   Phone,
   Mail,
   MapPin,
-  Globe,
   ArrowUp,
-  ChevronRight
 } from "lucide-react";
 import { companyInfo } from "@/data/company";
-import { primaryServices } from "@/data/services";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -22,9 +19,10 @@ export default function Footer() {
     <footer className="bg-[#241E20] text-white/80 border-t border-[#4A1525]">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          
           {/* Column 1: Brand Info */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-7 space-y-4">
             <div className="flex items-center gap-3">
               <div className="relative w-12 h-12 rounded-lg overflow-hidden border border-[#F5C64D]/30 shadow">
                 <Image
@@ -45,11 +43,11 @@ export default function Footer() {
               </div>
             </div>
 
-            <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-white/70 leading-relaxed max-w-xl">
               The Complete Educational Services Partner. Empowering schools, colleges, universities, students, educators, and enterprise employers through integrated research, talent placement, HR staffing, branding, and regulatory documentation solutions.
             </p>
 
-            {/* Social SVGs */}
+            {/* Social Links */}
             <div className="pt-2 flex items-center gap-2.5">
               <a
                 href={companyInfo.socialLinks.linkedin}
@@ -98,124 +96,42 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Core Business Verticals */}
-          <div>
+          {/* Column 2: Contact Us (Renamed from Contact Desk; Core Verticals & Explore SRD removed) */}
+          <div className="lg:col-span-5 space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 font-['Poppins'] border-b border-white/10 pb-2">
-              Core Verticals
+              Contact Us
             </h4>
-            <ul className="space-y-2 text-xs">
-              {primaryServices.map((service) => (
-                <li key={service.id}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="hover:text-[#F5C64D] transition-colors flex items-center gap-1.5"
-                  >
-                    <span className="text-[#F5C64D] text-[10px]">▸</span>
-                    <span>{service.title}</span>
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/skill-opportunities"
-                  className="hover:text-[#F5C64D] transition-colors flex items-center gap-1.5"
-                >
-                  <span className="text-[#F5C64D] text-[10px]">▸</span>
-                  <span>Global Skill Directory</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Quick Navigation */}
-          <div>
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 font-['Poppins'] border-b border-white/10 pb-2">
-              Explore SRD
-            </h4>
-            <ul className="space-y-2 text-xs">
-              <li>
-                <Link href="/about" className="hover:text-[#F5C64D] transition-colors">
-                  About SRD Overview
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-[#F5C64D] transition-colors">
-                  All 12 Service Divisions
-                </Link>
-              </li>
-              <li>
-                <Link href="/industries" className="hover:text-[#F5C64D] transition-colors">
-                  Sectors We Serve
-                </Link>
-              </li>
-              <li>
-                <Link href="/portfolio" className="hover:text-[#F5C64D] transition-colors">
-                  Institutional Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="/news-events" className="hover:text-[#F5C64D] transition-colors">
-                  News & Events
-                </Link>
-              </li>
-              <li>
-                <Link href="/blogs" className="hover:text-[#F5C64D] transition-colors">
-                  Blogs & Perspectives
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources" className="hover:text-[#F5C64D] transition-colors">
-                  Educational Resources & Dossiers
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" className="hover:text-[#F5C64D] transition-colors">
-                  Careers & Job Enquiries
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-[#F5C64D] transition-colors">
-                  Contact & Institutional Inquiries
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Contact & Verification */}
-          <div>
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4 font-['Poppins'] border-b border-white/10 pb-2">
-              Contact Desk
-            </h4>
-            <div className="space-y-3 text-xs">
-              <div className="flex items-start gap-2.5">
+            <div className="space-y-3.5 text-xs sm:text-sm">
+              <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#F5C64D] shrink-0 mt-0.5" />
-                <span className="text-white/70">
+                <span className="text-white/80 leading-relaxed">
                   {companyInfo.contact.address}
                 </span>
               </div>
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#F5C64D] shrink-0" />
                 <a
                   href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                  className="hover:text-[#F5C64D] transition-colors"
+                  className="hover:text-[#F5C64D] transition-colors font-semibold text-white"
                 >
                   {companyInfo.contact.phone}
                 </a>
               </div>
-              <div className="flex items-center gap-2.5">
+              <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#F5C64D] shrink-0" />
                 <a
                   href={`mailto:${companyInfo.contact.email}`}
-                  className="hover:text-[#F5C64D] transition-colors"
+                  className="hover:text-[#F5C64D] transition-colors font-semibold text-white"
                 >
                   {companyInfo.contact.email}
                 </a>
               </div>
-              <div className="pt-2 text-[11px] text-white/50 border-t border-white/5">
+              <div className="pt-2 text-[11px] text-white/50 border-t border-white/10">
                 <p>{companyInfo.contact.workingHours}</p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 

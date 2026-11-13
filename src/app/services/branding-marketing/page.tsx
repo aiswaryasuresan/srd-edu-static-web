@@ -31,7 +31,6 @@ import {
   Share2,
 } from "lucide-react";
 import PageBanner from "@/components/shared/PageBanner";
-import EnquiryForm from "@/components/forms/EnquiryForm";
 
 export const metadata: Metadata = {
   title: "Institution Branding & Marketing Services | SRD Edu Corporation",
@@ -1058,119 +1057,119 @@ export default function BrandingMarketingPage() {
       </section>
 
       {/* =========================================================================
-          9. CONTACT INFORMATION & INQUIRY FORM
+          9. CONTACT INFORMATION (Form Removed; Direct Contact & Email Only)
       ========================================================================= */}
       <section id="contact-section" className="py-16 sm:py-24 bg-white scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {/* Left Column: Official Contact Details */}
-            <div className="lg:col-span-5 space-y-8">
-              <div>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#521D27]/5 border border-[#521D27]/15 mb-4">
-                  <Phone className="w-4 h-4 text-[#521D27]" />
-                  <span className="text-xs font-bold tracking-wide uppercase text-[#521D27]">
-                    Get in Touch
-                  </span>
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#29252A] font-serif mb-3">
-                  Connect With Our Marketing Team
-                </h2>
-                <p className="text-sm sm:text-base text-[#4B464E] leading-relaxed">
-                  Ready to strengthen your institution&apos;s brand and reach more students? Speak with our marketing team to discuss tailored solutions for your institution.
-                </p>
-              </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm text-center">
+            
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#521D27]/5 border border-[#521D27]/15 mb-4">
+              <Phone className="w-4 h-4 text-[#521D27]" />
+              <span className="text-xs font-bold tracking-wide uppercase text-[#521D27]">
+                Connect With Our Team
+              </span>
+            </div>
 
-              {/* Institution Title Card */}
-              <div className="p-6 rounded-2xl bg-[#FAF8F5] border border-stone-200/80 space-y-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#29252A] font-serif mb-3">
+              Let&apos;s Build a Stronger Institutional Brand Together
+            </h2>
+
+            <p className="text-sm sm:text-base text-[#4B464E] max-w-2xl mx-auto mb-8 leading-relaxed">
+              Ready to strengthen your institution&apos;s brand, reach prospective students and establish a respected presence? Connect directly with our marketing specialists.
+            </p>
+
+            {/* Direct Contact Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              {/* Phone */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Phone className="w-5 h-5" />
+                </div>
                 <div>
-                  <h3 className="text-base font-bold text-[#521D27] tracking-wider uppercase font-serif">
-                    SRD EDU CORPORATION PVT. LTD.
-                  </h3>
-                  <p className="text-xs font-bold text-[#C89E37] uppercase tracking-wider mt-0.5">
-                    THE COMPLETE EDUCATIONAL SERVICES PROVIDER
-                  </p>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
+                  <a
+                    href="tel:+919036041206"
+                    className="font-bold text-base text-[#521D27] hover:underline"
+                  >
+                    +91 90360 41206
+                  </a>
                 </div>
+              </div>
 
-                <div className="space-y-4 text-xs sm:text-sm text-[#4B464E] pt-2 border-t border-stone-200">
-                  {/* City Office */}
-                  <div className="flex items-start gap-3">
-                    <MapPin className="w-4 h-4 text-[#521D27] shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-[#29252A] block">City Office:</strong>
-                      <span>Opposite to HP Petrol Pump, Aranthangi Road, Pattukkottai – 614601, Thanjavur (DT), Tamil Nadu.</span>
-                    </div>
-                  </div>
-
-                  {/* Head Office */}
-                  <div className="flex items-start gap-3">
-                    <Building2 className="w-4 h-4 text-[#521D27] shrink-0 mt-1" />
-                    <div>
-                      <strong className="text-[#29252A] block">Head Office:</strong>
-                      <span>189/3, S.R. Building, Trichy Main Road, Thiruvanaikoil, Trichy – 620005, Tamil Nadu.</span>
-                    </div>
-                  </div>
-
-                  {/* Phone */}
-                  <div className="flex items-center gap-3">
-                    <Phone className="w-4 h-4 text-[#521D27] shrink-0" />
-                    <div>
-                      <strong className="text-[#29252A] mr-2">Phone / WhatsApp:</strong>
-                      <a href="tel:+919036041206" className="hover:text-[#521D27] font-semibold text-[#29252A]">
-                        +91 90360 41206
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Email */}
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-4 h-4 text-[#521D27] shrink-0" />
-                    <div>
-                      <strong className="text-[#29252A] mr-2">Email:</strong>
-                      <a href="mailto:srdeducorporation@gmail.com" className="hover:text-[#521D27] font-semibold text-[#29252A]">
-                        srdeducorporation@gmail.com
-                      </a>
-                    </div>
-                  </div>
-
-                  {/* Website */}
-                  <div className="flex items-center gap-3">
-                    <Globe className="w-4 h-4 text-[#521D27] shrink-0" />
-                    <div>
-                      <strong className="text-[#29252A] mr-2">Website:</strong>
-                      <a href="https://srdeducorp.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#521D27] font-semibold text-[#29252A]">
-                        srdeducorp.com
-                      </a>
-                    </div>
-                  </div>
+              {/* Email */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Mail className="w-5 h-5" />
                 </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
+                  <a
+                    href="mailto:srdecducorp@gmail.com"
+                    className="font-bold text-sm text-[#521D27] hover:underline block truncate max-w-[200px]"
+                  >
+                    srdecducorp@gmail.com
+                  </a>
+                </div>
+              </div>
 
-                {/* Final Tagline */}
-                <div className="pt-3 border-t border-stone-200">
-                  <p className="text-xs font-bold text-[#521D27] italic">
-                    Shaping Brands. Connecting Communities. Inspiring Growth.
+              {/* Website */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Globe className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Website</span>
+                  <a
+                    href="https://srdeducorp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-sm text-[#521D27] hover:underline"
+                  >
+                    srdeducorp.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Office Address */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Office Address</span>
+                  <p className="text-xs text-stone-700 leading-relaxed font-medium">
+                    DF Creations, #122, 3rd Floor, Opposite Brigade Tower, Brigade Road, Woodstreet, Bangalore - 560025
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Interactive Inquiry Form */}
-            <div className="lg:col-span-7">
-              <div className="p-6 sm:p-10 rounded-3xl bg-[#FAF8F5] border border-stone-200 shadow-sm">
-                <div className="mb-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-[#29252A] font-serif">
-                    Request a Branding & Marketing Consultation
-                  </h3>
-                  <p className="text-xs sm:text-sm text-[#4B464E] mt-1">
-                    Fill out the form below and our institutional branding specialists will connect with you within 24 hours.
-                  </p>
-                </div>
+            {/* Direct Action Buttons: Call & Email */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="tel:+919036041206"
+                className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call Us Now</span>
+              </a>
 
-                <EnquiryForm
-                  initialService="Institution Branding & Marketing"
-                  sourceContext="Branding & Marketing Service Page"
-                />
-              </div>
+              <a
+                href="mailto:srdecducorp@gmail.com"
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-100 text-[#521D27] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Email Our Team</span>
+              </a>
             </div>
+
+            {/* Tagline */}
+            <div className="mt-8 pt-6 border-t border-stone-200">
+              <p className="text-xs sm:text-sm font-bold text-[#521D27] italic font-serif">
+                &ldquo;Shaping Brands. Connecting Communities. Inspiring Growth.&rdquo;
+              </p>
+            </div>
+
           </div>
         </div>
       </section>

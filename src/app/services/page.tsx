@@ -16,10 +16,14 @@ import {
   ArrowRight,
   CheckCircle2,
   Sparkles,
+  Phone,
+  Mail,
+  MapPin,
+  Globe,
 } from "lucide-react";
 import PageBanner from "@/components/shared/PageBanner";
 import { primaryServices } from "@/data/services";
-import EnquiryForm from "@/components/forms/EnquiryForm";
+import { companyInfo } from "@/data/company";
 
 export const metadata: Metadata = {
   title: "All Educational Services | SRD Edu Corporation",
@@ -140,23 +144,113 @@ export default function MasterServicesPage() {
         </div>
       </section>
 
-      {/* 3. Institutional Service Enquiry Section */}
+      {/* 3. Direct Contact Section (Form Removed) */}
       <section id="enquiry" className="py-16 sm:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
-              Institutional Partnership
+          <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm text-center">
+            <span className="inline-block text-xs font-bold uppercase tracking-widest text-[#9A6715] bg-[#FFF7E6] px-3.5 py-1.5 rounded-full border border-[#EFC269]/40 mb-4">
+              CONNECT WITH OUR ADVISORY TEAM
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#501C29] font-['Poppins'] mt-2">
-              Request a Specialized Service Consultation
-            </h2>
-            <p className="text-xs sm:text-sm text-gray-600 mt-2">
-              Connect with our leadership advisory team to discuss custom institutional partnerships, staffing, or compliance solutions.
-            </p>
-          </div>
 
-          <div className="bg-[#FAF7F5] p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-lg">
-            <EnquiryForm />
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mb-3">
+              Request an Institutional Service Consultation
+            </h2>
+
+            <p className="text-sm sm:text-base text-stone-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+              Connect directly with our leadership advisory team to discuss custom institutional partnerships, staffing, accreditation, branding, or digital solutions.
+            </p>
+
+            {/* Direct Contact Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              {/* Phone */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
+                  <a
+                    href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
+                    className="font-bold text-base text-[#501C29] hover:underline"
+                  >
+                    {companyInfo.contact.phone}
+                  </a>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
+                  <a
+                    href={`mailto:${companyInfo.contact.email}`}
+                    className="font-bold text-sm text-[#501C29] hover:underline block truncate max-w-[200px]"
+                  >
+                    {companyInfo.contact.email}
+                  </a>
+                </div>
+              </div>
+
+              {/* Website */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <Globe className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Website</span>
+                  <a
+                    href={`https://${companyInfo.contact.website}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-sm text-[#501C29] hover:underline"
+                  >
+                    {companyInfo.contact.website}
+                  </a>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-stone-400 block text-[11px] font-bold uppercase">Office Address</span>
+                  <p className="text-xs text-stone-700 leading-relaxed font-medium">
+                    {companyInfo.contact.address}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Direct Action Buttons */}
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
+                className="inline-flex items-center gap-2 bg-[#501C29] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Call Us Now</span>
+              </a>
+
+              <a
+                href={`mailto:${companyInfo.contact.email}`}
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-[#501C29] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Email Our Team</span>
+              </a>
+            </div>
+
+            {/* Tagline */}
+            <div className="mt-8 pt-6 border-t border-stone-200">
+              <p className="text-xs sm:text-sm font-bold text-[#501C29] italic font-serif">
+                &ldquo;Your Success, Our Mission — Skilled People • Strong Institutions • Brighter Future&rdquo;
+              </p>
+            </div>
           </div>
         </div>
       </section>
