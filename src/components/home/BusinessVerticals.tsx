@@ -1,111 +1,194 @@
 import Link from "next/link";
 import {
-  Microscope,
   Users,
-  Layers,
-  Target,
   Megaphone,
+  Microscope,
+  BarChart3,
+  Target,
+  Layers,
+  Building2,
+  FileText,
+  Globe,
+  GraduationCap,
   Briefcase,
+  Handshake,
   ArrowRight,
+  Sparkles,
 } from "lucide-react";
 
 export default function BusinessVerticals() {
-  const services = [
+  const allServices = [
     {
-      title: "Institute Research & Development",
-      description: "Research ecosystem architecture, publications, intellectual property frameworks, and innovation projects.",
-      href: "/services/institute-research-development",
-      icon: Microscope,
-    },
-    {
+      number: "01",
       title: "Human Resource Management",
-      description: "Qualified educators, school management experts, exam trainers, counsellors, and operational staff.",
+      toolBadge: "HR Staffing & Talent Portal",
+      description: "School leadership, faculties, exam trainers, counsellors, and specialized institutional staff.",
       href: "/services/human-resource-management",
       icon: Users,
     },
     {
-      title: "Skill Development Project",
-      description: "Credit-aligned vocational skills, modern practical labs, corporate CSR projects, and certifications.",
-      href: "/services/skill-development-project",
-      icon: Layers,
-    },
-    {
-      title: "Competitive Exam Support",
-      description: "Integrated campus coaching for JEE, NEET, Olympiads, and CUET with senior faculty deployment.",
-      href: "/services/competitive-exam-support",
-      icon: Target,
-    },
-    {
-      title: "Branding & Marketing",
-      description: "Strategic institution identity, admissions marketing funnels, campaigns, and reputation building.",
+      number: "02",
+      title: "Institution Branding & Marketing",
+      toolBadge: "Creative Media & Campaign Engine",
+      description: "Visual identity, digital campaigns, outdoor branding, prospectus design, and admission funnels.",
       href: "/services/branding-marketing",
       icon: Megaphone,
     },
     {
-      title: "Placement Assistance",
-      description: "Campus recruitment drives, corporate employer tie-ups, student employability clinics, and hiring.",
-      href: "/services/placement-assistance",
+      number: "03",
+      title: "Institute Research & Development",
+      toolBadge: "R&D Architecture & IPR Tools",
+      description: "Research policy, scopus publications, patent frameworks, and funded innovation projects.",
+      href: "/services/institute-research-development",
+      icon: Microscope,
+    },
+    {
+      number: "04",
+      title: "IT & Data Management",
+      toolBadge: "SIS Telemetry & Analytics Hub",
+      description: "Institutional data governance, predictive student telemetry, and executive administrative dashboards.",
+      href: "/services/data-analytics",
+      icon: BarChart3,
+    },
+    {
+      number: "05",
+      title: "Competitive Exam Programs",
+      toolBadge: "Smart Test & Evaluation Suite",
+      description: "Integrated campus coaching for JEE, NEET, Olympiads, and Civil Services with senior faculty.",
+      href: "/services/competitive-exam-support",
+      icon: Target,
+    },
+    {
+      number: "06",
+      title: "Skill Training Programs",
+      toolBadge: "Vocational Labs & Certification",
+      description: "Credit-aligned vocational skills, modern practical labs, corporate CSR projects, and skill diplomas.",
+      href: "/services/skill-development-project",
+      icon: Layers,
+    },
+    {
+      number: "07",
+      title: "Infrastructure & Investment",
+      toolBadge: "Master Planning & Capital Budgeting",
+      description: "Campus architectural planning, capital funding models, laboratory setup, and facility expansion.",
+      href: "/services/infrastructure-finance-support",
+      icon: Building2,
+    },
+    {
+      number: "08",
+      title: "Documentation & Policy Making",
+      toolBadge: "Statutory Compliance Vault",
+      description: "UGC, AICTE, CBSE affiliation, institutional bylaws, NAAC/NBA compliance documentation.",
+      href: "/services/documentation-legal",
+      icon: FileText,
+    },
+    {
+      number: "09",
+      title: "Global Placement Services",
+      toolBadge: "International Career Bridge",
+      description: "Global corporate partnerships, overseas career pathways, cross-border internships, and work visas.",
+      href: "/services/global-placement",
+      icon: Globe,
+    },
+    {
+      number: "10",
+      title: "Academic Programmes & Systems",
+      toolBadge: "OBE & Curriculum Framework",
+      description: "Modern curriculum design, outcome-based education (OBE), pedagogical systems, and academic audits.",
+      href: "/services/academic-programmes-systems",
+      icon: GraduationCap,
+    },
+    {
+      number: "11",
+      title: "Education Consultancy",
+      toolBadge: "Turnkey Advisory Management",
+      description: "Turnkey school and college establishment, institutional turnarounds, and executive trust governance.",
+      href: "/services/education-consultancy",
       icon: Briefcase,
+    },
+    {
+      number: "12",
+      title: "Placement Assistance",
+      toolBadge: "Campus Recruitment Network",
+      description: "Corporate recruitment drives, employability training, mock interview clinics, and employer tie-ups.",
+      href: "/services/placement-assistance",
+      icon: Handshake,
     },
   ];
 
   return (
-    <section className="pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 bg-white border-b border-gray-200">
+    <section className="py-20 sm:py-28 lg:py-32 bg-[#FAF8F5] border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header with "View All 12 Services →" on the right */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="w-8 h-0.5 bg-[#B8821B]"></span>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#B8821B] font-['Poppins']">
-                OUR INTEGRATED BUSINESS SOLUTIONS
-              </span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#501C29] font-['Poppins']">
-              Comprehensive Services for the Education Ecosystem
-            </h2>
+        {/* Header Section: Bold Typography with Generous Spacing */}
+        <div className="max-w-3xl mb-14 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#501C29]/10 border border-[#501C29]/20 mb-4">
+            <Sparkles className="w-4 h-4 text-[#501C29]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-[#501C29]">
+              OUR 12 INSTITUTIONAL SERVICES
+            </span>
           </div>
 
-          <Link
-            href="/services"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#501C29] hover:text-[#B8821B] transition-colors shrink-0"
-          >
-            <span>View All 12 Services</span>
-            <ArrowRight className="w-4 h-4 text-[#B8821B]" />
-          </Link>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#501C29] font-['Poppins'] tracking-tight leading-tight">
+            Comprehensive Services for the Education Ecosystem
+          </h2>
+
+          <p className="text-base sm:text-lg text-stone-600 mt-4 leading-relaxed font-medium">
+            Tailored, research-driven, and result-oriented solutions designed specifically for schools, colleges, universities, and educational trustees across India.
+          </p>
         </div>
 
-        {/* 6 Core Service Cards Grid (3 cols on desktop) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((item, idx) => (
+        {/* 12 Services Grid: Spacious, Bold, with Digital Tool Badges and Brochure Colors */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {allServices.map((item) => (
             <div
-              key={idx}
-              className="bg-white rounded-2xl p-6 sm:p-7 border border-gray-100 shadow-sm hover:shadow-xl hover:border-b-4 hover:border-b-[#F5C64D] transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
+              key={item.number}
+              className="bg-white rounded-3xl p-7 sm:p-8 border border-stone-200/90 shadow-sm hover:shadow-2xl hover:border-[#501C29] transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 relative overflow-hidden"
             >
-              <div className="space-y-4">
-                {/* Icon in soft warm gold container */}
-                <div className="w-12 h-12 rounded-xl bg-[#FFF7E6] text-[#B8821B] flex items-center justify-center">
-                  <item.icon className="w-6 h-6 text-[#B8821B]" />
+              {/* Subtle top accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#501C29] group-hover:to-[#EFC269] transition-all duration-300" />
+
+              <div>
+                {/* Top Row: Digital Tool Badge & Icon */}
+                <div className="flex items-center justify-between gap-2 mb-5">
+                  <div className="w-13 h-13 rounded-2xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform p-3">
+                    <item.icon className="w-6 h-6" />
+                  </div>
+                  <span className="text-xs font-mono font-bold text-stone-300 group-hover:text-[#501C29] transition-colors">
+                    {item.number}
+                  </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-[#241E20] group-hover:text-[#501C29] transition-colors font-['Poppins'] leading-snug">
+                {/* Tool Tag */}
+                <div className="mb-3">
+                  <span className="inline-block text-[11px] font-bold uppercase tracking-wider text-[#9A6715] bg-[#FFF7E6] px-2.5 py-1 rounded-md border border-[#EFC269]/40 font-['Poppins']">
+                    {item.toolBadge}
+                  </span>
+                </div>
+
+                {/* Bold Heading */}
+                <h3 className="text-xl sm:text-[22px] font-extrabold text-[#241E20] group-hover:text-[#501C29] transition-colors font-['Poppins'] leading-snug mb-3">
                   {item.title}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                {/* Description */}
+                <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
                   {item.description}
                 </p>
               </div>
 
-              <div className="pt-6 mt-4 border-t border-gray-100">
+              {/* Bottom Action Link */}
+              <div className="pt-6 mt-6 border-t border-stone-100 flex items-center justify-between">
                 <Link
                   href={item.href}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#501C29] group-hover:text-[#B8821B] transition-colors"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#501C29] group-hover:text-[#B8821B] transition-colors"
                 >
-                  <span>Explore Service Page</span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                  <span>Explore Service</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
+                <span className="text-[11px] font-bold text-stone-400 group-hover:text-[#501C29]">
+                  SRD Brochure
+                </span>
               </div>
             </div>
           ))}

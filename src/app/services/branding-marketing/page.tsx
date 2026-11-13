@@ -1118,9 +1118,9 @@ export default function BrandingMarketingPage() {
                   <div className="flex items-center gap-3">
                     <Phone className="w-4 h-4 text-[#521D27] shrink-0" />
                     <div>
-                      <strong className="text-[#29252A] mr-2">Phone:</strong>
-                      <a href="tel:+919789745369" className="hover:text-[#521D27] font-semibold text-[#29252A]">
-                        +91 97897 45369
+                      <strong className="text-[#29252A] mr-2">Phone / WhatsApp:</strong>
+                      <a href="tel:+919036041206" className="hover:text-[#521D27] font-semibold text-[#29252A]">
+                        +91 90360 41206
                       </a>
                     </div>
                   </div>

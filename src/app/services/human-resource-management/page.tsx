@@ -1236,9 +1236,9 @@ export default function HumanResourceManagementPage() {
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-gray-400 uppercase block">Phone</span>
-                    <a href="tel:+919876543210" className="font-semibold text-[#1C1917] hover:text-[#501C29] transition-colors">
-                      +91 98765 43210
+                    <span className="text-xs font-bold text-gray-400 uppercase block">Phone / WhatsApp</span>
+                    <a href="tel:+919036041206" className="font-semibold text-[#1C1917] hover:text-[#501C29] transition-colors">
+                      +91 90360 41206
                     </a>
                   </div>
                 </div>

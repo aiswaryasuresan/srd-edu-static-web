@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   Phone,
   Mail,
   MapPin,
   Clock,
   Globe,
-  ChevronRight,
   Sparkles,
-  MessageSquare,
 } from "lucide-react";
-import SectionHeading from "@/components/shared/SectionHeading";
 import PageBanner from "@/components/shared/PageBanner";
 import { companyInfo } from "@/data/company";
 import EnquiryForm from "@/components/forms/EnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Institutional Partnerships & Enquiries",
+  title: "Contact Us | SRD Edu Corporation",
   description:
     "Get in touch with SRD Edu Corporation. Corporate office details, institutional partnership inquiries, placement coordination, HR staffing, and skill program consultations.",
 };
@@ -24,136 +20,171 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="bg-white">
-      {/* Hero Banner */}
+      {/* Hero Banner with Burgundy & Gold */}
       <PageBanner
         title="Contact SRD Edu Corporation"
-        description="We welcome dialogue with school trustees, college principals, university deans, employers, and educational entrepreneurs. Initiate a partnership conversation today."
+        subtitle="Let's Build a Brighter Future Together"
+        description="We welcome dialogue with school trustees, college principals, university deans, employers, and educational leaders. Partner with SRD for reliable, professional, and result-oriented solutions."
         badge={{
           icon: Sparkles,
-          label: "Connect With Corporate Advisory",
+          label: "SRD EDU CORPORATION | OFFICIAL CONTACT DESK",
         }}
         breadcrumbs={[{ label: "Contact Us" }]}
       />
 
-      {/* Main Contact Grid */}
-      <section className="py-16 sm:py-20 bg-white border-b border-gray-200">
+      {/* Main Registration & Company Information Section */}
+      <section className="py-16 sm:py-24 bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            {/* Left: Contact Info & Corporate Directory */}
-            <div className="lg:col-span-5 space-y-6">
+            
+            {/* Left: Registration / Consultation Form */}
+            <div className="lg:col-span-7 order-2 lg:order-1">
+              <div className="bg-[#FAF8F5] p-6 sm:p-10 rounded-3xl border border-stone-200 shadow-sm">
+                <div className="mb-6">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#9A6715] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
+                    REGISTRATION & INQUIRY
+                  </span>
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-[#241E20] font-['Poppins'] mt-3">
+                    Institutional Partnership Form
+                  </h2>
+                  <p className="text-xs sm:text-sm text-stone-600 mt-1">
+                    Fill out the form below and our institutional coordinators will connect with you directly.
+                  </p>
+                </div>
+
+                <EnquiryForm
+                  initialService="General Institutional Partnership"
+                  sourceContext="Official Corporate Enquiries"
+                />
+              </div>
+            </div>
+
+            {/* Right: Company Information Block Directly from Brochure Page 8 */}
+            <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-2.5 py-1 rounded">
-                  Corporate Directory
+                <span className="text-xs font-bold uppercase tracking-widest text-[#501C29] bg-[#501C29]/10 px-3 py-1 rounded-full font-['Poppins']">
+                  COMPANY DETAILS
                 </span>
-                <h2 className="text-2xl font-bold text-[#241E20] font-['Poppins'] mt-2">
-                  Reach Our Advisory Desk
-                </h2>
-                <p className="text-xs sm:text-sm text-[#63595C] mt-1 leading-relaxed">
-                  Our corporate and regional coordinators are available during standard working hours to discuss institutional needs.
+                <h3 className="text-2xl font-extrabold text-[#501C29] font-['Poppins'] mt-3">
+                  SRD EDU CORPORATION
+                </h3>
+                <p className="text-xs sm:text-sm text-stone-600 mt-1">
+                  THE COMPLETE EDUCATIONAL SERVICES PARTNER
                 </p>
               </div>
 
-              {/* Contact Cards */}
+              {/* Contact Cards in Brochure Burgundy & Gold Palette */}
               <div className="space-y-4 text-xs sm:text-sm">
-                <div className="bg-[#F8F7F5] p-5 rounded-2xl border border-gray-200 flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-[#F5C64D]" />
+                
+                {/* Telephone */}
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                    <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#241E20] font-['Poppins']">
+                    <h4 className="font-bold text-[#241E20] font-['Poppins']">
                       Telephone / WhatsApp
-                    </h3>
+                    </h4>
                     <a
                       href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                      className="text-[#4A1525] font-semibold hover:underline block mt-0.5"
+                      className="text-[#501C29] font-extrabold text-base hover:underline block mt-0.5"
                     >
                       {companyInfo.contact.phone}
                     </a>
-                    <span className="text-[11px] text-gray-500">
-                      Direct Advisory Line & WhatsApp
+                    <span className="text-[11px] text-stone-500">
+                      Direct Institutional Line
                     </span>
                   </div>
                 </div>
 
-                <div className="bg-[#F8F7F5] p-5 rounded-2xl border border-gray-200 flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-[#F5C64D]" />
+                {/* Email */}
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                    <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#241E20] font-['Poppins']">
+                    <h4 className="font-bold text-[#241E20] font-['Poppins']">
                       Official Email
-                    </h3>
+                    </h4>
                     <a
                       href={`mailto:${companyInfo.contact.email}`}
-                      className="text-[#4A1525] font-semibold hover:underline block mt-0.5"
+                      className="text-[#501C29] font-extrabold hover:underline block mt-0.5"
                     >
                       {companyInfo.contact.email}
                     </a>
-                    <span className="text-[11px] text-gray-500">
-                      Corporate response within 24 business hours
+                    <span className="text-[11px] text-stone-500">
+                      Response within 24 business hours
                     </span>
                   </div>
                 </div>
 
-                <div className="bg-[#F8F7F5] p-5 rounded-2xl border border-gray-200 flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shrink-0">
-                    <Globe className="w-5 h-5 text-[#F5C64D]" />
+                {/* Website */}
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                    <Globe className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#241E20] font-['Poppins']">
+                    <h4 className="font-bold text-[#241E20] font-['Poppins']">
                       Official Website
-                    </h3>
+                    </h4>
                     <a
-                      href={`https://${companyInfo.contact.website.replace(/^https?:\/\//, '')}`}
+                      href={`https://${companyInfo.contact.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#4A1525] font-semibold hover:underline block mt-0.5"
+                      className="text-[#501C29] font-extrabold hover:underline block mt-0.5"
                     >
                       {companyInfo.contact.website}
                     </a>
-                    <span className="text-[11px] text-gray-500">
-                      Corporate portal & institutional services
+                    <span className="text-[11px] text-stone-500">
+                      Corporate portal & 12 services
                     </span>
                   </div>
                 </div>
 
-                <div className="bg-[#F8F7F5] p-5 rounded-2xl border border-gray-200 flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-[#F5C64D]" />
+                {/* Office Address */}
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                    <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#241E20] font-['Poppins']">
-                      Registered Corporate Address
-                    </h3>
-                    <p className="text-[#63595C] mt-0.5 leading-relaxed">
+                    <h4 className="font-bold text-[#241E20] font-['Poppins']">
+                      Office Address
+                    </h4>
+                    <p className="text-stone-700 mt-1 leading-relaxed text-xs">
                       {companyInfo.contact.address}
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-[#F8F7F5] p-5 rounded-2xl border border-gray-200 flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shrink-0">
-                    <Clock className="w-5 h-5 text-[#F5C64D]" />
+                {/* Working Hours */}
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                    <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#241E20] font-['Poppins']">
+                    <h4 className="font-bold text-[#241E20] font-['Poppins']">
                       Working Hours
-                    </h3>
-                    <p className="text-[#63595C] mt-0.5">
+                    </h4>
+                    <p className="text-stone-700 mt-1 text-xs">
                       {companyInfo.contact.workingHours}
                     </p>
                   </div>
                 </div>
+
               </div>
+
+              {/* Tagline */}
+              <div className="p-4 rounded-2xl bg-gradient-to-r from-[#501C29] to-[#732736] text-white text-center shadow-lg">
+                <p className="text-sm font-bold font-serif italic text-[#EFC269]">
+                  &ldquo;Your Success, Our Mission&rdquo;
+                </p>
+                <p className="text-[11px] text-stone-200 mt-1">
+                  Skilled People • Strong Institutions • Brighter Future
+                </p>
+              </div>
+
             </div>
 
-            {/* Right: Interactive Form */}
-            <div className="lg:col-span-7">
-              <EnquiryForm
-                initialService="General Institutional Partnership"
-                sourceContext="Official Corporate Enquiries"
-              />
-            </div>
           </div>
         </div>
       </section>

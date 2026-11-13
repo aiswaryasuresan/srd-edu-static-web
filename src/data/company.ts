@@ -9,8 +9,8 @@ export const companyInfo = {
   vision: "To be recognized globally as the most trusted institutional development and career enablement partner, bridging the divide between academic potential and real-world opportunity.",
   
   contact: {
-    phone: "+91 98765 43210",
-    phoneDisplay: "+91 98765 43210",
+    phone: "+91 90360 41206",
+    phoneDisplay: "+91 90360 41206",
     email: "srdecducorp@gmail.com",
     website: "srdeducorp.com",
     address: "DF Creations, #122, 3rd Floor, Opposite Brigade Tower, Brigade Road, Woodstreet, Bangalore - 560025",
