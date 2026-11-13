@@ -25,7 +25,7 @@ export default function Hero() {
       headlineLine3: "Institutions",
       subtitle:
         "Integrated solutions for institutional development, branding, staffing, skill programs, compliance and growth.",
-      primaryCta: { label: "Explore Our Services", href: "/services" },
+      primaryCta: { label: "Explore Our Services", href: "#services" },
       secondaryCta: { label: "Get in Touch", href: "/contact" },
       image: "/images/banner/image01.png",
       imageAlt: "Indian university student smiling warmly in modern classroom lecture hall with laptop"
@@ -38,7 +38,7 @@ export default function Hero() {
       headlineLine3: "Opportunities",
       subtitle:
         "Connecting students, graduates, and professionals with verified national and global employer networks.",
-      primaryCta: { label: "Explore Our Services", href: "/services#global-placement" },
+      primaryCta: { label: "Explore Our Services", href: "/services/placement-assistance" },
       secondaryCta: { label: "Get in Touch", href: "/contact" },
       image: "/images/banner/image02.png",
       imageAlt: "Professional corporate recruitment and talent placement network"
@@ -64,13 +64,13 @@ export default function Hero() {
       icon: GraduationCap,
       title: "Institutional Development",
       description: "End-to-end guidance for building future-ready, compliant academic institutions.",
-      href: "/services"
+      href: "#services"
     },
     {
       icon: Users,
       title: "Talent & Placement",
       description: "Connecting students and graduates with verified national and global career opportunities.",
-      href: "/services#global-placement"
+      href: "/services/placement-assistance"
     },
     {
       icon: Layers,
@@ -82,13 +82,13 @@ export default function Hero() {
       icon: Building2,
       title: "Institutional Growth",
       description: "Strategic branding, student admission outreach, and long-term reputation architecture.",
-      href: "/services#branding-marketing"
+      href: "/services/branding-marketing"
     },
     {
       icon: FileCheck2,
       title: "Compliance Support",
       description: "Regulatory documentation, university affiliation, accreditation, and legal governance.",
-      href: "/services#documentation-legal"
+      href: "/services/documentation-legal"
     }
   ];
 

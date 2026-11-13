@@ -168,7 +168,7 @@ export default function AboutPage() {
                   <span>Request Staffing & HR Consultation</span>
                 </Link>
                 <Link
-                  href="/services#hr-management"
+                  href="/services/human-resource-management"
                   className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#682431] text-white font-semibold text-xs sm:text-sm px-5 py-3.5 rounded-xl transition-all"
                 >
                   <span>Explore HR Management Division</span>

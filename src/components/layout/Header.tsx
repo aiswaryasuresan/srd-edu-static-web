@@ -71,10 +71,12 @@ export default function Header() {
         {/* Center: Desktop Navigation Bar with White Text and Gold Underline for Active Link */}
         <nav className="hidden lg:flex items-center gap-1 xl:gap-2.5 2xl:gap-4 px-2 flex-nowrap">
           {mainNavItems.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+            const isServicesCategory = item.title === "Services";
+            const isActive = isServicesCategory
+              ? pathname.startsWith("/services")
+              : item.href === "/"
+              ? pathname === "/"
+              : Boolean(item.href && item.href !== "#" && pathname.startsWith(item.href));
 
             if (item.children) {
               return (
@@ -84,17 +86,24 @@ export default function Header() {
                   onMouseEnter={() => setActiveDropdown(item.title)}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <Link
-                    href={item.href}
-                    className={`flex items-center gap-1 px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors whitespace-nowrap ${
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setActiveDropdown(
+                        activeDropdown === item.title ? null : item.title
+                      )
+                    }
+                    className={`flex items-center gap-1 px-2.5 xl:px-3 py-2 text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors whitespace-nowrap cursor-pointer ${
                       isActive
                         ? "text-[#EFC269] border-b-2 border-[#EFC269]"
                         : "text-white hover:text-[#EFC269]"
                     }`}
+                    aria-expanded={activeDropdown === item.title}
+                    aria-haspopup="true"
                   >
                     <span className="whitespace-nowrap">{item.title}</span>
                     <ChevronDown className="w-3.5 h-3.5 text-white/70 transition-transform duration-200 group-hover:rotate-180 shrink-0" />
-                  </Link>
+                  </button>
 
                   {/* Dropdown Menu */}
                   <div
@@ -193,21 +202,27 @@ export default function Header() {
         <div className="lg:hidden bg-[#421D2A]/98 backdrop-blur-xl border-t border-white/10 px-4 py-4 space-y-2 shadow-2xl text-white">
           {mainNavItems.map((item) => (
             <div key={item.title} className="border-b border-white/10 pb-2">
-              <Link
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-sm font-semibold text-white hover:text-[#EFC269] py-1"
-              >
-                {item.title}
-              </Link>
+              {item.children ? (
+                <div className="text-xs font-bold text-[#EFC269] uppercase tracking-wider py-1 font-['Poppins']">
+                  {item.title}
+                </div>
+              ) : (
+                <Link
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-sm font-semibold text-white hover:text-[#EFC269] py-1"
+                >
+                  {item.title}
+                </Link>
+              )}
               {item.children && (
-                <div className="pl-3 mt-1 space-y-1">
+                <div className="pl-2 mt-1 space-y-1">
                   {item.children.map((sub) => (
                     <Link
                       key={sub.title}
                       href={sub.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block text-xs text-white/80 hover:text-[#EFC269] py-0.5"
+                      className="block text-xs text-white/85 hover:text-[#EFC269] py-0.5"
                     >
                       • {sub.title}
                     </Link>

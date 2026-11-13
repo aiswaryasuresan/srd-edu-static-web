@@ -12,6 +12,7 @@ export interface PageBannerProps {
   title: string | React.ReactNode;
   subtitle?: string;
   description?: string;
+  descriptionColor?: "white" | "gold";
   badge?: {
     icon?: LucideIcon;
     label?: string;
@@ -25,6 +26,7 @@ export default function PageBanner({
   title,
   subtitle,
   description,
+  descriptionColor = "white",
   badge,
   breadcrumbs = [],
   children,
@@ -114,7 +116,13 @@ export default function PageBanner({
 
           {/* Description */}
           {description && (
-            <p className="text-sm sm:text-base text-white/90 leading-relaxed pt-1 max-w-2xl font-normal drop-shadow-sm">
+            <p
+              className={`text-sm sm:text-base leading-relaxed pt-1 max-w-2xl drop-shadow-sm ${
+                descriptionColor === "gold"
+                  ? "text-[#EFC269] font-medium font-['Poppins']"
+                  : "text-white/90 font-normal"
+              }`}
+            >
               {description}
             </p>
           )}

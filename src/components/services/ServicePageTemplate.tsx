@@ -52,11 +52,11 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
       ========================================================================= */}
       <PageBanner
         title={data.title}
-        subtitle={data.tagline}
         description={data.shortDescription}
+        descriptionColor="gold"
         backgroundImage={data.heroImage || "/images/banner/campus-banner.jpg"}
         breadcrumbs={[
-          { label: "Services", href: "/services" },
+          { label: "Services" },
           { label: data.title },
         ]}
       >

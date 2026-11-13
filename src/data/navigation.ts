@@ -11,7 +11,7 @@ export const mainNavItems: NavItem[] = [
   },
   {
     title: "Services",
-    href: "/services",
+    href: "#",
     children: [
       {
         title: "Institute Research & Development",
