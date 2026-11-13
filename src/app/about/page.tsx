@@ -289,36 +289,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. Section: Our Approach (6 Steps) */}
-      <section id="our-approach" className="py-16 sm:py-20 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            badge="Execution Discipline"
-            title="Our Approach"
-            subtitle="Understand → Research → Plan → Connect → Implement → Support"
-            align="center"
-          />
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              { num: "01", name: "Understand", desc: "Clarify institutional objectives & human resource requirements." },
-              { num: "02", name: "Research", desc: "Audit regional talent pipelines, standards & requisitions." },
-              { num: "03", name: "Plan", desc: "Formulate recruitment roadmaps, faculty profiles & timelines." },
-              { num: "04", name: "Connect", desc: "Source verified candidates, faculties & operational experts." },
-              { num: "05", name: "Implement", desc: "Deploy academic personnel, conduct onboarding & skill modules." },
-              { num: "06", name: "Support", desc: "Provide continuous HR advisory, mentorship & retention audits." },
-            ].map((st) => (
-              <div key={st.num} className="bg-[#F8F7F5] p-5 rounded-xl border border-gray-200 text-center space-y-2">
-                <span className="text-2xl font-black text-[#521D27] font-['Poppins']">{st.num}</span>
-                <h4 className="text-sm font-bold text-[#241E20] font-['Poppins']">{st.name}</h4>
-                <p className="text-xs text-[#63595C]">{st.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Section: Business Ecosystem */}
+      {/* 5. Section: Business Ecosystem */}
       <section id="business-ecosystem" className="py-16 sm:py-20 bg-[#F8F7F5] border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
