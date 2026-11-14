@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="relative py-20 sm:py-24 lg:py-28 bg-[#521D27] text-white border-b border-[#EFC269]/20 overflow-hidden">
+    <section className="relative py-20 sm:py-24 lg:py-28 bg-[#521D27] text-white overflow-hidden">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.06]">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -84,31 +84,31 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={idx}
-                className="group relative bg-black/25 backdrop-blur-xs rounded-2xl p-7 sm:p-8 shadow-xl hover:shadow-2xl hover:bg-black/35 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between border border-[#EFC269]/30 hover:border-[#EFC269]"
+                className="group relative bg-white rounded-2xl p-7 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between border border-white/20"
               >
                 <div>
                   {/* Icon */}
-                  <div className="w-13 h-13 rounded-xl bg-white/10 text-[#EFC269] group-hover:bg-[#EFC269] group-hover:text-[#521D27] transition-all duration-300 flex items-center justify-center mb-5 shadow-sm">
+                  <div className="w-13 h-13 rounded-xl bg-[#521D27]/10 text-[#521D27] group-hover:bg-[#521D27] group-hover:text-[#EFC269] transition-all duration-300 flex items-center justify-center mb-5 shadow-sm">
                     <Icon className="w-6 h-6 transition-transform duration-300 group-hover:scale-110 stroke-[2]" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#EFC269] transition-colors font-['Poppins'] mb-2.5 leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#1C1917] group-hover:text-[#521D27] transition-colors font-['Poppins'] mb-2.5 leading-snug">
                     {point.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm text-stone-200/90 leading-relaxed">
+                  <p className="text-sm text-stone-600 leading-relaxed">
                     {point.description}
                   </p>
                 </div>
 
                 {/* Footer Indicator */}
-                <div className="pt-4 mt-5 border-t border-white/10 flex items-center justify-between text-xs font-semibold">
-                  <span className="font-mono text-white/50 group-hover:text-[#EFC269] transition-colors">
+                <div className="pt-4 mt-5 border-t border-stone-100 flex items-center justify-between text-xs font-semibold">
+                  <span className="font-mono text-stone-400 group-hover:text-[#521D27] transition-colors">
                     0{idx + 1}
                   </span>
-                  <span className="text-[#EFC269] group-hover:text-white font-bold transition-colors">
+                  <span className="text-[#521D27] group-hover:text-[#B8821B] font-bold transition-colors">
                     SRD Advantage
                   </span>
                 </div>
