@@ -85,7 +85,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
-      <body className="min-h-screen flex flex-col bg-white text-[#29252A] antialiased selection:bg-[#F8D481] selection:text-[#29252A]">
+      <body className="min-h-screen flex flex-col bg-[#521D27] text-white antialiased selection:bg-[#EFC269] selection:text-[#521D27]">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
