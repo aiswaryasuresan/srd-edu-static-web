@@ -17,7 +17,7 @@ export default function PortfolioPreview() {
           />
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#4A1525] hover:text-[#6B1F35] shrink-0"
+            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#521D27] hover:text-[#EFC269] shrink-0"
           >
             <span>View All Engagements</span>
             <ArrowRight className="w-4 h-4 text-[#F5C64D]" />
@@ -54,7 +54,7 @@ export default function PortfolioPreview() {
                       key={oIdx}
                       className="flex items-start gap-2 text-xs text-[#241E20]"
                     >
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#4A1525] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#521D27] shrink-0 mt-0.5" />
                       <span className="line-clamp-1">{out}</span>
                     </div>
                   ))}

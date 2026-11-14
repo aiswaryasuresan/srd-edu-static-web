@@ -39,8 +39,8 @@ export default function PillarsStrip() {
               key={idx}
               className="flex items-center justify-center gap-3 px-3 py-2 sm:py-1"
             >
-              <div className="w-10 h-10 rounded-lg bg-[#FDF6F7] text-[#501C29] flex items-center justify-center shrink-0">
-                <item.icon className="w-5 h-5 text-[#501C29]" />
+              <div className="w-10 h-10 rounded-lg bg-[#FDF6F7] text-[#521D27] flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-[#521D27]" />
               </div>
               <span className="text-xs sm:text-sm font-bold text-[#241E20] font-['Poppins'] leading-tight">
                 {item.title}

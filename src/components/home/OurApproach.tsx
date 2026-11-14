@@ -72,10 +72,10 @@ export default function OurApproach() {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xl font-extrabold text-[#4A1525] group-hover:text-[#B8821B] font-['Poppins']">
+                  <span className="text-xl font-extrabold text-[#521D27] group-hover:text-[#B8821B] font-['Poppins']">
                     {step.num}
                   </span>
-                  <div className="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-[#4A1525] shadow-xs">
+                  <div className="w-8 h-8 rounded-lg bg-white border border-gray-200 flex items-center justify-center text-[#521D27] shadow-xs">
                     <step.icon className="w-4 h-4 text-[#F5C64D]" />
                   </div>
                 </div>

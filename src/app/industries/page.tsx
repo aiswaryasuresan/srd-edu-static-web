@@ -68,7 +68,7 @@ export default function IndustriesPage() {
                 >
                   <div className="lg:col-span-8 space-y-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shrink-0 shadow-sm">
+                      <div className="w-12 h-12 rounded-xl bg-[#521D27] text-white flex items-center justify-center shrink-0 shadow-sm">
                         <Icon className="w-6 h-6 text-[#F5C64D]" />
                       </div>
                       <div>
@@ -81,7 +81,7 @@ export default function IndustriesPage() {
                       </div>
                     </div>
 
-                    <p className="text-xs font-semibold text-[#4A1525] uppercase tracking-wide">
+                    <p className="text-xs font-semibold text-[#521D27] uppercase tracking-wide">
                       Focus: {sector.subtitle}
                     </p>
 
@@ -113,7 +113,7 @@ export default function IndustriesPage() {
                     </p>
                     <Link
                       href={`/contact?sector=${encodeURIComponent(sector.title)}`}
-                      className="w-full inline-flex items-center justify-center gap-2 bg-[#4A1525] hover:bg-[#6B1F35] text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow transition-colors"
+                      className="w-full inline-flex items-center justify-center gap-2 bg-[#521D27] hover:bg-[#521D27]/90 text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow transition-colors"
                     >
                       <span>Inquire for {sector.title.split(' ')[0]}</span>
                       <ArrowRight className="w-3.5 h-3.5 text-[#F5C64D]" />

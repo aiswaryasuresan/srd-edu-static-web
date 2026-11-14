@@ -65,7 +65,7 @@ export default function PortfolioPage() {
                     </p>
                     {item.outcomes.map((out, oIdx) => (
                       <div key={oIdx} className="flex items-start gap-2 text-xs text-[#241E20]">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#4A1525] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#521D27] shrink-0 mt-0.5" />
                         <span>{out}</span>
                       </div>
                     ))}
@@ -89,7 +89,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 bg-[#4A1525] text-white text-center">
+      <section className="py-16 bg-[#521D27] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <h2 className="text-2xl sm:text-3xl font-bold font-['Poppins']">
             Ready to Plan Your Institutional Engagement?
@@ -100,7 +100,7 @@ export default function PortfolioPage() {
           <div className="pt-2">
             <Link
               href="/contact?intent=partner"
-              className="inline-flex items-center gap-2 bg-[#F5C64D] hover:bg-[#DCA42C] text-[#330B17] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-[#F5C64D] hover:bg-[#DCA42C] text-[#521D27] font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-lg transition-all"
             >
               <span>Request Institutional Consultation</span>
               <ArrowRight className="w-4 h-4" />

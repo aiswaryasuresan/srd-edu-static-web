@@ -38,11 +38,11 @@ export default function FAQAccordion({
               aria-expanded={isOpen}
             >
               <span className="flex items-center gap-2.5 font-semibold text-sm sm:text-base text-[#241E20] font-['Poppins']">
-                <HelpCircle className="w-4 h-4 text-[#4A1525] shrink-0" />
+                <HelpCircle className="w-4 h-4 text-[#521D27] shrink-0" />
                 {item.question}
               </span>
               <ChevronDown
-                className={`w-4 h-4 text-[#4A1525] shrink-0 transition-transform duration-200 ${
+                className={`w-4 h-4 text-[#521D27] shrink-0 transition-transform duration-200 ${
                   isOpen ? "rotate-180" : ""
                 }`}
               />

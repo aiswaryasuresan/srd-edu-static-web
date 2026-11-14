@@ -39,7 +39,7 @@ export default function InstitutionalSolutions() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-[#501C29] text-white">
+    <section className="py-16 sm:py-20 bg-[#521D27] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Institutional Infrastructure"
@@ -57,7 +57,7 @@ export default function InstitutionalSolutions() {
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#F5C64D] text-[#330B17] flex items-center justify-center font-bold shadow-md">
+                  <div className="w-12 h-12 rounded-xl bg-[#F5C64D] text-[#521D27] flex items-center justify-center font-bold shadow-md">
                     <item.icon className="w-6 h-6" />
                   </div>
                   <span className="text-[10px] font-bold uppercase tracking-wider text-[#F5C64D] bg-[#F5C64D]/15 border border-[#F5C64D]/30 px-2.5 py-1 rounded-md">

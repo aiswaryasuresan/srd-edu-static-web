@@ -104,7 +104,7 @@ export default function HumanResourceManagementPage() {
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#501C29]/90 via-transparent to-transparent flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#521D27]/90 via-transparent to-transparent flex items-end p-6">
                   <div className="text-white">
                     <span className="text-xs font-bold uppercase tracking-widest text-[#EFC269]">
                       Institutional Partner
@@ -123,7 +123,7 @@ export default function HumanResourceManagementPage() {
                 ABOUT OUR HR SERVICES
               </div>
 
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#501C29] font-['Poppins'] leading-tight">
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-[#521D27] font-['Poppins'] leading-tight">
                 Your Trusted Partner in Educational HR Solutions
               </h2>
 
@@ -151,7 +151,7 @@ export default function HumanResourceManagementPage() {
                   <span className="text-xs font-bold text-[#B8821B] uppercase tracking-wider block">
                     SRD Core Philosophy
                   </span>
-                  <p className="text-base sm:text-lg font-bold text-[#501C29] font-['Poppins'] mt-0.5">
+                  <p className="text-base sm:text-lg font-bold text-[#521D27] font-['Poppins'] mt-0.5">
                     Right People. Right Roles. Greater Impact.
                   </p>
                 </div>
@@ -175,7 +175,7 @@ export default function HumanResourceManagementPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
               OUR HR SERVICES
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mt-3">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#521D27] font-['Poppins'] mt-3">
               Comprehensive HR Solutions for Educational Institutions
             </h2>
             <p className="mt-3 text-sm sm:text-base text-gray-600">
@@ -191,14 +191,14 @@ export default function HumanResourceManagementPage() {
             <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#501C29]/10 text-[#501C29] group-hover:bg-[#501C29] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#521D27]/10 text-[#521D27] group-hover:bg-[#521D27] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
                     <GraduationCap className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-bold text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full font-['Poppins']">
                     01
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#501C29] transition-colors font-['Poppins']">
+                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#521D27] transition-colors font-['Poppins']">
                   Teaching & Academic Staff
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -214,14 +214,14 @@ export default function HumanResourceManagementPage() {
             <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#501C29]/10 text-[#501C29] group-hover:bg-[#501C29] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#521D27]/10 text-[#521D27] group-hover:bg-[#521D27] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-bold text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full font-['Poppins']">
                     02
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#501C29] transition-colors font-['Poppins']">
+                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#521D27] transition-colors font-['Poppins']">
                   Management & Leadership
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -237,14 +237,14 @@ export default function HumanResourceManagementPage() {
             <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#501C29]/10 text-[#501C29] group-hover:bg-[#501C29] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#521D27]/10 text-[#521D27] group-hover:bg-[#521D27] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
                     <Layers className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-bold text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full font-['Poppins']">
                     03
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#501C29] transition-colors font-['Poppins']">
+                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#521D27] transition-colors font-['Poppins']">
                   Training & Development
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -260,14 +260,14 @@ export default function HumanResourceManagementPage() {
             <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#501C29]/10 text-[#501C29] group-hover:bg-[#501C29] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#521D27]/10 text-[#521D27] group-hover:bg-[#521D27] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
                     <HeartHandshake className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-bold text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full font-['Poppins']">
                     04
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#501C29] transition-colors font-['Poppins']">
+                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#521D27] transition-colors font-['Poppins']">
                   Counselling & Mentoring
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -283,14 +283,14 @@ export default function HumanResourceManagementPage() {
             <div className="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group md:col-span-2 lg:col-span-1">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#501C29]/10 text-[#501C29] group-hover:bg-[#501C29] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#521D27]/10 text-[#521D27] group-hover:bg-[#521D27] group-hover:text-white transition-colors duration-300 flex items-center justify-center">
                     <Building2 className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-bold text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full font-['Poppins']">
                     05
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#501C29] transition-colors font-['Poppins']">
+                <h3 className="text-xl font-bold text-[#1C1917] group-hover:text-[#521D27] transition-colors font-['Poppins']">
                   Support & Operations
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -318,7 +318,7 @@ export default function HumanResourceManagementPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
               KEY POSITIONS WE PROVIDE
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mt-3">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#521D27] font-['Poppins'] mt-3">
               For a Stronger Educational Ecosystem
             </h2>
             <p className="mt-3 text-sm sm:text-base text-gray-600">
@@ -341,12 +341,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 01
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     School Management Experts
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -372,12 +372,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 02
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Faculty
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -403,12 +403,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 03
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Subject Experts for Competitive Exams
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -434,12 +434,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 04
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Counsellors & Mentors
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -465,12 +465,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 05
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Skill Trainers
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -496,12 +496,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 06
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     HR & Operations Support Team
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -527,12 +527,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 07
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Administrative & Support Staff
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -558,12 +558,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 08
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Media & Technical Experts
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -589,12 +589,12 @@ export default function HumanResourceManagementPage() {
                     sizes="(max-width: 640px) 100vw, 380px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-3 left-3 bg-[#501C29] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 bg-[#521D27] text-[#EFC269] text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">
                     Position 09
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#501C29] transition-colors">
+                  <h3 className="text-lg font-bold text-[#1C1917] font-['Poppins'] mb-2 group-hover:text-[#521D27] transition-colors">
                     Marketing Professionals
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -626,7 +626,7 @@ export default function HumanResourceManagementPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#B8821B] bg-[#FFF7E6] px-3 py-1 rounded-full border border-[#EFC269]/40">
               OUR RECRUITMENT PROCESS
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mt-3">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#521D27] font-['Poppins'] mt-3">
               Simple. Transparent. Effective.
             </h2>
             <p className="mt-3 text-sm sm:text-base text-gray-600">
@@ -641,7 +641,7 @@ export default function HumanResourceManagementPage() {
             {/* Step 01 */}
             <div className="bg-[#FAF7F5] rounded-2xl p-6 border border-gray-200 flex flex-col justify-between hover:border-[#EFC269] hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="space-y-3">
-                <div className="w-11 h-11 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
+                <div className="w-11 h-11 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
                   01
                 </div>
                 <h3 className="text-base font-bold text-[#1C1917] font-['Poppins']">
@@ -656,7 +656,7 @@ export default function HumanResourceManagementPage() {
             {/* Step 02 */}
             <div className="bg-[#FAF7F5] rounded-2xl p-6 border border-gray-200 flex flex-col justify-between hover:border-[#EFC269] hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="space-y-3">
-                <div className="w-11 h-11 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
+                <div className="w-11 h-11 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
                   02
                 </div>
                 <h3 className="text-base font-bold text-[#1C1917] font-['Poppins']">
@@ -671,7 +671,7 @@ export default function HumanResourceManagementPage() {
             {/* Step 03 */}
             <div className="bg-[#FAF7F5] rounded-2xl p-6 border border-gray-200 flex flex-col justify-between hover:border-[#EFC269] hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="space-y-3">
-                <div className="w-11 h-11 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
+                <div className="w-11 h-11 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
                   03
                 </div>
                 <h3 className="text-base font-bold text-[#1C1917] font-['Poppins']">
@@ -686,7 +686,7 @@ export default function HumanResourceManagementPage() {
             {/* Step 04 */}
             <div className="bg-[#FAF7F5] rounded-2xl p-6 border border-gray-200 flex flex-col justify-between hover:border-[#EFC269] hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="space-y-3">
-                <div className="w-11 h-11 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
+                <div className="w-11 h-11 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
                   04
                 </div>
                 <h3 className="text-base font-bold text-[#1C1917] font-['Poppins']">
@@ -701,7 +701,7 @@ export default function HumanResourceManagementPage() {
             {/* Step 05 */}
             <div className="bg-[#FAF7F5] rounded-2xl p-6 border border-gray-200 flex flex-col justify-between hover:border-[#EFC269] hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="space-y-3">
-                <div className="w-11 h-11 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
+                <div className="w-11 h-11 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center font-black text-sm font-['Poppins'] shadow-sm">
                   05
                 </div>
                 <h3 className="text-base font-bold text-[#1C1917] font-['Poppins']">
@@ -717,7 +717,7 @@ export default function HumanResourceManagementPage() {
 
           {/* Closing Statement */}
           <div className="mt-12 text-center">
-            <p className="text-sm sm:text-base font-extrabold text-[#501C29] font-['Poppins'] tracking-wide">
+            <p className="text-sm sm:text-base font-extrabold text-[#521D27] font-['Poppins'] tracking-wide">
               Quality Hiring &nbsp;|&nbsp; Better Performance &nbsp;|&nbsp; Lasting Success
             </p>
           </div>
@@ -736,14 +736,14 @@ export default function HumanResourceManagementPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm text-center">
             
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#501C29]/10 border border-[#501C29]/20 mb-4">
-              <Phone className="w-4 h-4 text-[#501C29]" />
-              <span className="text-xs font-bold uppercase tracking-widest text-[#501C29]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#521D27]/10 border border-[#521D27]/20 mb-4">
+              <Phone className="w-4 h-4 text-[#521D27]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#521D27]">
                 Connect With Our HR Advisory Team
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#521D27] font-['Poppins'] mb-3">
               Let&apos;s Build Your Team Together
             </h2>
 
@@ -755,14 +755,14 @@ export default function HumanResourceManagementPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
               {/* Phone */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
                   <a
                     href="tel:+919036041206"
-                    className="font-bold text-base text-[#501C29] hover:underline"
+                    className="font-bold text-base text-[#521D27] hover:underline"
                   >
                     +91 90360 41206
                   </a>
@@ -771,14 +771,14 @@ export default function HumanResourceManagementPage() {
 
               {/* Email */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
                   <a
                     href="mailto:srdecducorp@gmail.com"
-                    className="font-bold text-sm text-[#501C29] hover:underline block truncate max-w-[200px]"
+                    className="font-bold text-sm text-[#521D27] hover:underline block truncate max-w-[200px]"
                   >
                     srdecducorp@gmail.com
                   </a>
@@ -787,7 +787,7 @@ export default function HumanResourceManagementPage() {
 
               {/* Website */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Globe className="w-5 h-5" />
                 </div>
                 <div>
@@ -796,7 +796,7 @@ export default function HumanResourceManagementPage() {
                     href="https://srdeducorp.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-sm text-[#501C29] hover:underline"
+                    className="font-bold text-sm text-[#521D27] hover:underline"
                   >
                     srdeducorp.com
                   </a>
@@ -805,7 +805,7 @@ export default function HumanResourceManagementPage() {
 
               {/* Address */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -821,7 +821,7 @@ export default function HumanResourceManagementPage() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
                 href="tel:+919036041206"
-                className="inline-flex items-center gap-2 bg-[#501C29] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+                className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us Now</span>
@@ -829,7 +829,7 @@ export default function HumanResourceManagementPage() {
 
               <a
                 href="mailto:srdecducorp@gmail.com"
-                className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-[#501C29] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-[#521D27] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
               >
                 <Mail className="w-4 h-4" />
                 <span>Email Our Team</span>
@@ -838,7 +838,7 @@ export default function HumanResourceManagementPage() {
 
             {/* Final Tagline Callout */}
             <div className="mt-8 pt-6 border-t border-stone-200">
-              <p className="text-xs sm:text-sm font-bold text-[#501C29] italic font-serif">
+              <p className="text-xs sm:text-sm font-bold text-[#521D27] italic font-serif">
                 &ldquo;Your Success, Our Mission — Qualified People • Strong Institutions • Brighter Future&rdquo;
               </p>
             </div>

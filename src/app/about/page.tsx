@@ -66,7 +66,7 @@ export default function AboutPage() {
                   </div>
 
                   {/* Gradient Overlay at Bottom of Photo */}
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#260B12] via-[#260B12]/80 to-transparent p-6 text-white text-center">
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#521D27] via-[#521D27]/80 to-transparent p-6 text-white text-center">
                     <span className="inline-block px-3 py-1 bg-[#EFC269] text-[#29252A] text-[11px] font-bold uppercase tracking-wider rounded-full mb-1.5 shadow-sm">
                       Founder & CEO
                     </span>
@@ -169,7 +169,7 @@ export default function AboutPage() {
                 </Link>
                 <Link
                   href="/services/human-resource-management"
-                  className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#682431] text-white font-semibold text-xs sm:text-sm px-5 py-3.5 rounded-xl transition-all"
+                  className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#521D27]/90 text-white font-semibold text-xs sm:text-sm px-5 py-3.5 rounded-xl transition-all"
                 >
                   <span>Explore HR Management Division</span>
                   <ArrowRight className="w-4 h-4 text-[#EFC269]" />

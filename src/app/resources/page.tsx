@@ -91,7 +91,7 @@ export default function ResourcesPage() {
                   {art.title}
                 </h2>
 
-                <p className="text-sm text-[#4A1525] font-medium mb-4">
+                <p className="text-sm text-[#521D27] font-medium mb-4">
                   {art.summary}
                 </p>
 
@@ -123,7 +123,7 @@ export default function ResourcesPage() {
                 className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:border-[#F5C64D] transition-all"
               >
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-xl bg-[#4A1525] text-white flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#521D27] text-white flex items-center justify-center">
                     <FileText className="w-5 h-5 text-[#F5C64D]" />
                   </div>
                   <div>
@@ -143,7 +143,7 @@ export default function ResourcesPage() {
                   <span className="text-[11px] text-gray-400 font-medium">{b.size}</span>
                   <Link
                     href={`/contact?intent=brochure&item=${encodeURIComponent(b.title)}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#4A1525] hover:underline"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#521D27] hover:underline"
                   >
                     <span>Request Copy</span>
                     <ArrowRight className="w-3 h-3 text-[#F5C64D]" />

@@ -22,7 +22,7 @@ export default function SkillShowcase() {
               className="bg-[#F8F7F5] rounded-2xl p-6 border border-gray-200 flex flex-col justify-between hover:border-[#F5C64D] hover:bg-[#FFFDF5] transition-all duration-200"
             >
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shadow-xs">
+                <div className="w-12 h-12 rounded-xl bg-[#521D27] text-white flex items-center justify-center shadow-xs">
                   {idx === 0 ? (
                     <Cpu className="w-6 h-6 text-[#F5C64D]" />
                   ) : idx === 1 ? (
@@ -57,7 +57,7 @@ export default function SkillShowcase() {
               <div className="pt-6 mt-4 border-t border-gray-200">
                 <Link
                   href="/skill-opportunities"
-                  className="text-xs font-bold text-[#4A1525] hover:text-[#6B1F35] inline-flex items-center gap-1.5"
+                  className="text-xs font-bold text-[#521D27] hover:text-[#EFC269] inline-flex items-center gap-1.5"
                 >
                   <span>Explore All {cat.items.length} Programs</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#F5C64D]" />
@@ -80,7 +80,7 @@ export default function SkillShowcase() {
             </div>
             <Link
               href="/skill-opportunities"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#4A1525] hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#521D27] hover:underline"
             >
               <span>View Full Skill Catalog</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#F5C64D]" />
@@ -107,7 +107,7 @@ export default function SkillShowcase() {
 
                 <div className="mt-3 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500 font-medium">
                   <span>⏱ {prog.duration}</span>
-                  <span className="text-[#4A1525] font-semibold">{prog.format.split(' ')[0]}</span>
+                  <span className="text-[#521D27] font-semibold">{prog.format.split(' ')[0]}</span>
                 </div>
               </div>
             ))}

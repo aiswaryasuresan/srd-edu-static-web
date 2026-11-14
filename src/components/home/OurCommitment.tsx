@@ -30,7 +30,7 @@ export default function OurCommitment() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-[#501C29] text-white relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-[#521D27] text-white relative overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#EFC269]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-black/20 rounded-full blur-3xl pointer-events-none" />
@@ -61,8 +61,8 @@ export default function OurCommitment() {
                 className="bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/15 hover:border-[#EFC269]/60 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-[#EFC269] text-[#2A0A14] flex items-center justify-center font-bold mb-5 shadow-md">
-                    <Icon className="w-6 h-6 text-[#2A0A14]" />
+                  <div className="w-12 h-12 rounded-xl bg-[#EFC269] text-[#521D27] flex items-center justify-center font-bold mb-5 shadow-md">
+                    <Icon className="w-6 h-6 text-[#521D27]" />
                   </div>
                   <h3 className="text-lg font-bold text-white font-['Poppins'] mb-2">
                     {pillar.title}

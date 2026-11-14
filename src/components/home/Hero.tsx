@@ -178,10 +178,10 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-3.5 sm:gap-4 pt-2">
               <Link
                 href={current.primaryCta.href}
-                className="inline-flex items-center gap-2 bg-[#F5C754] hover:bg-[#e6b947] text-[#24131A] font-bold text-xs sm:text-sm px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-[#F5C754] hover:bg-[#e6b947] text-[#521D27] font-bold text-xs sm:text-sm px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
               >
                 <span>{current.primaryCta.label}</span>
-                <ArrowRight className="w-4 h-4 text-[#24131A]" />
+                <ArrowRight className="w-4 h-4 text-[#521D27]" />
               </Link>
 
               <Link

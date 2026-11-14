@@ -1,14 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-srd-burgundy-950: #330B17;
-  --color-srd-burgundy-900: #4A1525;
-  --color-srd-burgundy-800: #6B1F35;
-  --color-srd-burgundy-700: #80233D;
-  --color-srd-burgundy-500: #942B49;
-  --color-srd-burgundy-200: #ECC0C8;
-  --color-srd-burgundy-100: #F7E6E9;
-  --color-srd-burgundy-50: #FDF6F7;
+  --color-srd-primary: #521D27;
+  --color-srd-burgundy: #521D27;
 
   --color-srd-gold-700: #B8821B;
   --color-srd-gold-600: #DCA42C;

@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
                       />
                     ))}
                   </div>
-                  <Quote className="w-6 h-6 text-[#4A1525]/20" />
+                  <Quote className="w-6 h-6 text-[#521D27]/20" />
                 </div>
 
                 <p className="text-xs sm:text-sm text-[#241E20] leading-relaxed italic">

@@ -122,14 +122,14 @@ export default function BusinessVerticals() {
         
         {/* Header Section: Bold Typography with Generous Spacing */}
         <div className="max-w-3xl mb-14 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#501C29]/10 border border-[#501C29]/20 mb-4">
-            <Sparkles className="w-4 h-4 text-[#501C29]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#501C29]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#521D27]/10 border border-[#521D27]/20 mb-4">
+            <Sparkles className="w-4 h-4 text-[#521D27]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-[#521D27]">
               OUR 12 INSTITUTIONAL SERVICES
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#501C29] font-['Poppins'] tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#521D27] font-['Poppins'] tracking-tight leading-tight">
             Comprehensive Services for the Education Ecosystem
           </h2>
 
@@ -143,18 +143,18 @@ export default function BusinessVerticals() {
           {allServices.map((item) => (
             <div
               key={item.number}
-              className="bg-white rounded-3xl p-7 sm:p-8 border border-stone-200/90 shadow-sm hover:shadow-2xl hover:border-[#501C29] transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 relative overflow-hidden"
+              className="bg-white rounded-3xl p-7 sm:p-8 border border-stone-200/90 shadow-sm hover:shadow-2xl hover:border-[#521D27] transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1.5 relative overflow-hidden"
             >
               {/* Subtle top accent bar */}
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#501C29] group-hover:to-[#EFC269] transition-all duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#521D27] group-hover:to-[#EFC269] transition-all duration-300" />
 
               <div>
                 {/* Top Row: Digital Tool Badge & Icon */}
                 <div className="flex items-center justify-between gap-2 mb-5">
-                  <div className="w-13 h-13 rounded-2xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform p-3">
+                  <div className="w-13 h-13 rounded-2xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform p-3">
                     <item.icon className="w-6 h-6" />
                   </div>
-                  <span className="text-xs font-mono font-bold text-stone-300 group-hover:text-[#501C29] transition-colors">
+                  <span className="text-xs font-mono font-bold text-stone-300 group-hover:text-[#521D27] transition-colors">
                     {item.number}
                   </span>
                 </div>
@@ -167,7 +167,7 @@ export default function BusinessVerticals() {
                 </div>
 
                 {/* Bold Heading */}
-                <h3 className="text-xl sm:text-[22px] font-extrabold text-[#241E20] group-hover:text-[#501C29] transition-colors font-['Poppins'] leading-snug mb-3">
+                <h3 className="text-xl sm:text-[22px] font-extrabold text-[#241E20] group-hover:text-[#521D27] transition-colors font-['Poppins'] leading-snug mb-3">
                   {item.title}
                 </h3>
 
@@ -181,12 +181,12 @@ export default function BusinessVerticals() {
               <div className="pt-6 mt-6 border-t border-stone-100 flex items-center justify-between">
                 <Link
                   href={item.href}
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#501C29] group-hover:text-[#B8821B] transition-colors"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#521D27] group-hover:text-[#B8821B] transition-colors"
                 >
                   <span>Explore Service</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
-                <span className="text-[11px] font-bold text-stone-400 group-hover:text-[#501C29]">
+                <span className="text-[11px] font-bold text-stone-400 group-hover:text-[#521D27]">
                   SRD Brochure
                 </span>
               </div>

@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="text-lg font-bold text-[#241E20] font-['Poppins']">5. Contact Regarding Privacy</h2>
             <p>
-              For inquiries regarding corporate data governance, contact our administrative desk at: <a href={`mailto:${companyInfo.contact.email}`} className="text-[#4A1525] underline font-medium">{companyInfo.contact.email}</a>.
+              For inquiries regarding corporate data governance, contact our administrative desk at: <a href={`mailto:${companyInfo.contact.email}`} className="text-[#521D27] underline font-medium">{companyInfo.contact.email}</a>.
             </p>
           </section>
         </div>

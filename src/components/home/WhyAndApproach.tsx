@@ -50,7 +50,7 @@ export default function WhyAndApproach() {
 
             {/* Why Choose SRD Content */}
             <div className="sm:col-span-7 space-y-4">
-              <h3 className="text-2xl font-bold text-[#501C29] font-['Poppins']">
+              <h3 className="text-2xl font-bold text-[#521D27] font-['Poppins']">
                 Why Choose SRD?
               </h3>
               <div className="space-y-2.5">
@@ -69,7 +69,7 @@ export default function WhyAndApproach() {
           {/* Right Column: Our Approach Process Flow */}
           <div className="lg:col-span-6 space-y-4 lg:pl-4 border-t lg:border-t-0 lg:border-l border-gray-200 pt-8 lg:pt-0">
             <div>
-              <h3 className="text-2xl font-bold text-[#501C29] font-['Poppins']">
+              <h3 className="text-2xl font-bold text-[#521D27] font-['Poppins']">
                 Our Approach
               </h3>
               <p className="text-xs sm:text-sm text-gray-600 mt-1">
@@ -82,7 +82,7 @@ export default function WhyAndApproach() {
               {processSteps.map((step, idx) => (
                 <Fragment key={idx}>
                   <div className="w-18 flex flex-col items-center text-center shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-[#501C29] text-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
+                    <div className="w-12 h-12 rounded-full bg-[#521D27] text-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
                       <step.icon className="w-5 h-5 text-white" />
                     </div>
                     <span className="text-[11px] font-bold text-[#241E20] mt-2 font-['Poppins'] leading-tight">
@@ -106,7 +106,7 @@ export default function WhyAndApproach() {
                 {processSteps.slice(0, 3).map((step, idx) => (
                   <Fragment key={idx}>
                     <div className="flex flex-col items-center text-center w-16 shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-[#501C29] text-white flex items-center justify-center shadow-md">
+                      <div className="w-12 h-12 rounded-full bg-[#521D27] text-white flex items-center justify-center shadow-md">
                         <step.icon className="w-5 h-5 text-white" />
                       </div>
                       <span className="text-[11px] font-bold text-[#241E20] mt-1.5 font-['Poppins'] leading-tight">
@@ -127,7 +127,7 @@ export default function WhyAndApproach() {
                 {processSteps.slice(3, 6).map((step, idx) => (
                   <Fragment key={idx}>
                     <div className="flex flex-col items-center text-center w-16 shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-[#501C29] text-white flex items-center justify-center shadow-md">
+                      <div className="w-12 h-12 rounded-full bg-[#521D27] text-white flex items-center justify-center shadow-md">
                         <step.icon className="w-5 h-5 text-white" />
                       </div>
                       <span className="text-[11px] font-bold text-[#241E20] mt-1.5 font-['Poppins'] leading-tight">

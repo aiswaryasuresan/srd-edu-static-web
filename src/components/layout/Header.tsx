@@ -44,7 +44,7 @@ export default function Header() {
       <div
         className={`transition-all duration-300 ${
           isScrolled
-            ? "bg-[#421D2A]/95 backdrop-blur-md shadow-lg border-b border-[#EFC269]/20 py-2.5"
+            ? "bg-[#521D27]/95 backdrop-blur-md shadow-lg border-b border-[#EFC269]/20 py-2.5"
             : "bg-transparent py-3 sm:py-3.5 border-none"
         }`}
       >
@@ -113,7 +113,7 @@ export default function Header() {
                         : "opacity-0 invisible -translate-y-2 pointer-events-none"
                     }`}
                   >
-                    <div className="bg-[#421D2A]/98 backdrop-blur-xl rounded-xl shadow-2xl border border-[#EFC269]/30 p-2.5 overflow-hidden text-white">
+                    <div className="bg-[#521D27]/98 backdrop-blur-xl rounded-xl shadow-2xl border border-[#EFC269]/30 p-2.5 overflow-hidden text-white">
                       <div className="px-3 py-2 mb-1 border-b border-white/10 bg-black/20 rounded-lg">
                         <p className="text-xs font-semibold text-[#EFC269] uppercase tracking-wider font-['Poppins']">
                           {item.title}
@@ -199,7 +199,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#421D2A]/98 backdrop-blur-xl border-t border-white/10 px-4 py-4 space-y-2 shadow-2xl text-white">
+        <div className="lg:hidden bg-[#521D27]/98 backdrop-blur-xl border-t border-white/10 px-4 py-4 space-y-2 shadow-2xl text-white">
           {mainNavItems.map((item) => (
             <div key={item.title} className="border-b border-white/10 pb-2">
               {item.children ? (

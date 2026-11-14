@@ -92,14 +92,14 @@ export default function EnquiryForm({
           <div className="pt-3 border-t border-[#F5C64D]/30 flex flex-wrap justify-center gap-3">
             <a
               href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-              className="inline-flex items-center gap-1.5 bg-[#4A1525] text-white text-xs px-3.5 py-2 rounded-lg font-medium hover:bg-[#6B1F35] transition-colors"
+              className="inline-flex items-center gap-1.5 bg-[#521D27] text-white text-xs px-3.5 py-2 rounded-lg font-medium hover:bg-[#521D27]/90 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#F5C64D]" />
               Call Corporate Desk
             </a>
             <a
               href={`mailto:${companyInfo.contact.email}?subject=Consultation Enquiry from ${encodeURIComponent(formData.fullName)}&body=Institution: ${encodeURIComponent(formData.institutionName)}%0D%0AService: ${encodeURIComponent(formData.serviceInterest)}%0D%0APhone: ${encodeURIComponent(formData.phone)}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(formData.message)}`}
-              className="inline-flex items-center gap-1.5 bg-[#F5C64D] text-[#330B17] text-xs px-3.5 py-2 rounded-lg font-semibold hover:bg-[#DCA42C] transition-colors"
+              className="inline-flex items-center gap-1.5 bg-[#F5C64D] text-[#521D27] text-xs px-3.5 py-2 rounded-lg font-semibold hover:bg-[#DCA42C] transition-colors"
             >
               <Mail className="w-3.5 h-3.5" />
               Send Pre-filled Email
@@ -108,7 +108,7 @@ export default function EnquiryForm({
 
           <button
             onClick={() => setSubmitted(false)}
-            className="text-[11px] text-[#4A1525] underline pt-2 block mx-auto"
+            className="text-[11px] text-[#521D27] underline pt-2 block mx-auto"
           >
             Submit Another Request
           </button>
@@ -135,7 +135,7 @@ export default function EnquiryForm({
                 onChange={(e) =>
                   setFormData({ ...formData, fullName: e.target.value })
                 }
-                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
               />
             </div>
 
@@ -151,7 +151,7 @@ export default function EnquiryForm({
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
               />
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function EnquiryForm({
                 onChange={(e) =>
                   setFormData({ ...formData, phone: e.target.value })
                 }
-                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
               />
             </div>
 
@@ -184,7 +184,7 @@ export default function EnquiryForm({
                 onChange={(e) =>
                   setFormData({ ...formData, institutionName: e.target.value })
                 }
-                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
               />
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function EnquiryForm({
                 onChange={(e) =>
                   setFormData({ ...formData, role: e.target.value })
                 }
-                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
               >
                 <option value="School / College Management">School / College Management</option>
                 <option value="Principal / Dean / HoD">Principal / Dean / HoD</option>
@@ -219,7 +219,7 @@ export default function EnquiryForm({
                 onChange={(e) =>
                   setFormData({ ...formData, serviceInterest: e.target.value })
                 }
-                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+                className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
               >
                 {serviceOptions.map((opt) => (
                   <option key={opt} value={opt}>
@@ -241,14 +241,14 @@ export default function EnquiryForm({
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#4A1525]"
+              className="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C64D] focus:border-[#521D27]"
             ></textarea>
           </div>
 
           <div className="pt-2">
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 bg-[#521D27] hover:bg-[#6B1F35] text-white font-semibold text-xs sm:text-sm px-5 py-3 rounded-lg shadow transition-all duration-200 transform hover:-translate-y-0.5"
+              className="w-full inline-flex items-center justify-center gap-2 bg-[#521D27] hover:bg-[#521D27]/90 text-white font-semibold text-xs sm:text-sm px-5 py-3 rounded-lg shadow transition-all duration-200 transform hover:-translate-y-0.5"
             >
               <Send className="w-4 h-4 text-[#F8D481]" />
               <span>Submit Consultation Request</span>

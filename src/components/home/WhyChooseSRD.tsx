@@ -76,7 +76,7 @@ export default function WhyChooseSRD() {
                   {diff.description}
                 </p>
               </div>
-              <div className="pt-4 mt-3 border-t border-gray-100 flex items-center gap-1.5 text-xs font-semibold text-[#4A1525]">
+              <div className="pt-4 mt-3 border-t border-gray-100 flex items-center gap-1.5 text-xs font-semibold text-[#521D27]">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#F5C64D]" />
                 <span>Verified Corporate Standard</span>
               </div>

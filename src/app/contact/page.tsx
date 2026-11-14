@@ -63,10 +63,10 @@ export default function ContactPage() {
             {/* Right: Company Information Block Directly from Brochure Page 8 */}
             <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#501C29] bg-[#501C29]/10 px-3 py-1 rounded-full font-['Poppins']">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#521D27] bg-[#521D27]/10 px-3 py-1 rounded-full font-['Poppins']">
                   COMPANY DETAILS
                 </span>
-                <h3 className="text-2xl font-extrabold text-[#501C29] font-['Poppins'] mt-3">
+                <h3 className="text-2xl font-extrabold text-[#521D27] font-['Poppins'] mt-3">
                   SRD EDU CORPORATION
                 </h3>
                 <p className="text-xs sm:text-sm text-stone-600 mt-1">
@@ -78,8 +78,8 @@ export default function ContactPage() {
               <div className="space-y-4 text-xs sm:text-sm">
                 
                 {/* Telephone */}
-                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
-                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#521D27] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
                     </h4>
                     <a
                       href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                      className="text-[#501C29] font-extrabold text-base hover:underline block mt-0.5"
+                      className="text-[#521D27] font-extrabold text-base hover:underline block mt-0.5"
                     >
                       {companyInfo.contact.phone}
                     </a>
@@ -99,8 +99,8 @@ export default function ContactPage() {
                 </div>
 
                 {/* Email */}
-                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
-                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#521D27] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     </h4>
                     <a
                       href={`mailto:${companyInfo.contact.email}`}
-                      className="text-[#501C29] font-extrabold hover:underline block mt-0.5"
+                      className="text-[#521D27] font-extrabold hover:underline block mt-0.5"
                     >
                       {companyInfo.contact.email}
                     </a>
@@ -120,8 +120,8 @@ export default function ContactPage() {
                 </div>
 
                 {/* Website */}
-                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
-                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#521D27] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                     <Globe className="w-5 h-5" />
                   </div>
                   <div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                       href={`https://${companyInfo.contact.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#501C29] font-extrabold hover:underline block mt-0.5"
+                      className="text-[#521D27] font-extrabold hover:underline block mt-0.5"
                     >
                       {companyInfo.contact.website}
                     </a>
@@ -143,8 +143,8 @@ export default function ContactPage() {
                 </div>
 
                 {/* Office Address */}
-                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#501C29] transition-colors">
-                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5 hover:border-[#521D27] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -159,7 +159,7 @@ export default function ContactPage() {
 
                 {/* Working Hours */}
                 <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                  <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
@@ -175,7 +175,7 @@ export default function ContactPage() {
               </div>
 
               {/* Tagline */}
-              <div className="p-4 rounded-2xl bg-gradient-to-r from-[#501C29] to-[#732736] text-white text-center shadow-lg">
+              <div className="p-4 rounded-2xl bg-gradient-to-r from-[#521D27] to-[#732736] text-white text-center shadow-lg">
                 <p className="text-sm font-bold font-serif italic text-[#EFC269]">
                   &ldquo;Your Success, Our Mission&rdquo;
                 </p>

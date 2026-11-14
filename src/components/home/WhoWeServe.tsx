@@ -70,7 +70,7 @@ export default function WhoWeServe() {
               className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#F5C64D] transition-all duration-200 flex flex-col justify-between"
             >
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-[#4A1525] text-white flex items-center justify-center shadow-xs">
+                <div className="w-12 h-12 rounded-xl bg-[#521D27] text-white flex items-center justify-center shadow-xs">
                   <aud.icon className="w-6 h-6 text-[#F5C64D]" />
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export default function WhoWeServe() {
               <div className="pt-5 mt-4 border-t border-gray-100">
                 <Link
                   href={aud.href}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#4A1525] hover:text-[#6B1F35] transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#521D27] hover:text-[#EFC269] transition-colors"
                 >
                   <span>{aud.actionText}</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#F5C64D]" />

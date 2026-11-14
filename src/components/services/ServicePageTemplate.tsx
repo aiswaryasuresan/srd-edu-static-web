@@ -55,7 +55,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#501C29] bg-[#501C29]/10 border border-[#501C29]/20 px-3.5 py-1.5 rounded-full font-['Poppins']">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#521D27] bg-[#521D27]/10 border border-[#521D27]/20 px-3.5 py-1.5 rounded-full font-['Poppins']">
               STRUCTURED DISCIPLINES
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#241E20] font-['Poppins'] mt-3">
@@ -70,11 +70,11 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
             {data.categories.map((cat, cIdx) => (
               <div
                 key={cIdx}
-                className="bg-[#FAF8F5] rounded-3xl p-7 sm:p-8 border border-stone-200 hover:border-[#501C29] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-[#FAF8F5] rounded-3xl p-7 sm:p-8 border border-stone-200 hover:border-[#521D27] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-black px-3 py-1 rounded-full bg-[#501C29] text-[#EFC269]">
+                    <span className="text-xs font-black px-3 py-1 rounded-full bg-[#521D27] text-[#EFC269]">
                       0{cIdx + 1}
                     </span>
                     <span className="text-xs font-bold uppercase tracking-wider text-[#9A6715] bg-[#FFF7E6] px-2 py-0.5 rounded border border-[#EFC269]/40">
@@ -82,7 +82,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                     </span>
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-bold text-[#241E20] group-hover:text-[#501C29] transition-colors font-['Poppins'] mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#241E20] group-hover:text-[#521D27] transition-colors font-['Poppins'] mb-2">
                     {cat.title}
                   </h3>
 
@@ -112,7 +112,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
       <section className="py-16 sm:py-20 bg-[#FAF8F5] border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#501C29] bg-[#501C29]/10 px-3 py-1 rounded-full font-['Poppins']">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#521D27] bg-[#521D27]/10 px-3 py-1 rounded-full font-['Poppins']">
               WORK PROCESS
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#241E20] font-['Poppins'] mt-2">
@@ -127,7 +127,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                 className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between"
               >
                 <div>
-                  <span className="text-2xl font-black text-[#501C29] font-mono block mb-2">
+                  <span className="text-2xl font-black text-[#521D27] font-mono block mb-2">
                     {proc.step}
                   </span>
                   <h3 className="text-base font-bold text-[#241E20] font-['Poppins'] mb-1">
@@ -155,7 +155,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
               CONTACT US FOR {data.title.toUpperCase()}
             </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#521D27] font-['Poppins'] mb-3">
               Let&apos;s Build Together
             </h2>
 
@@ -168,14 +168,14 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
               
               {/* Phone */}
               <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
                   <a
                     href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                    className="font-bold text-base text-[#501C29] hover:underline"
+                    className="font-bold text-base text-[#521D27] hover:underline"
                   >
                     {companyInfo.contact.phone}
                   </a>
@@ -184,14 +184,14 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
 
               {/* Email */}
               <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
                   <a
                     href={`mailto:${companyInfo.contact.email}`}
-                    className="font-bold text-sm text-[#501C29] hover:underline block truncate max-w-[200px]"
+                    className="font-bold text-sm text-[#521D27] hover:underline block truncate max-w-[200px]"
                   >
                     {companyInfo.contact.email}
                   </a>
@@ -200,7 +200,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
 
               {/* Website */}
               <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Globe className="w-5 h-5" />
                 </div>
                 <div>
@@ -209,7 +209,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
                     href={`https://${companyInfo.contact.website}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-sm text-[#501C29] hover:underline"
+                    className="font-bold text-sm text-[#521D27] hover:underline"
                   >
                     {companyInfo.contact.website}
                   </a>
@@ -218,7 +218,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
 
               {/* Office Address */}
               <div className="bg-white p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -235,7 +235,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
                 href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                className="inline-flex items-center gap-2 bg-[#501C29] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+                className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us Now</span>
@@ -243,7 +243,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
 
               <a
                 href={`mailto:${companyInfo.contact.email}`}
-                className="inline-flex items-center gap-2 bg-white hover:bg-stone-100 text-[#501C29] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-100 text-[#521D27] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
               >
                 <Mail className="w-4 h-4" />
                 <span>Email Our Team</span>
@@ -252,7 +252,7 @@ export default function ServicePageTemplate({ data }: ServicePageTemplateProps) 
 
             {/* Tagline */}
             <div className="mt-8 pt-6 border-t border-stone-200">
-              <p className="text-xs sm:text-sm font-bold text-[#501C29] italic font-serif">
+              <p className="text-xs sm:text-sm font-bold text-[#521D27] italic font-serif">
                 &ldquo;Your Success, Our Mission — Skilled People • Strong Institutions • Brighter Future&rdquo;
               </p>
             </div>

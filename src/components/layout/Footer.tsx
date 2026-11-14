@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#241E20] text-white/80 border-t border-[#4A1525]">
+    <footer className="bg-[#241E20] text-white/80 border-t border-[#521D27]">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
@@ -53,7 +53,7 @@ export default function Footer() {
                 href={companyInfo.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#330B17] flex items-center justify-center transition-colors text-white"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#521D27] flex items-center justify-center transition-colors text-white"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@ export default function Footer() {
                 href={companyInfo.socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#330B17] flex items-center justify-center transition-colors text-white"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#521D27] flex items-center justify-center transition-colors text-white"
                 aria-label="Twitter / X"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@ export default function Footer() {
                 href={companyInfo.socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#330B17] flex items-center justify-center transition-colors text-white"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#521D27] flex items-center justify-center transition-colors text-white"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ export default function Footer() {
                 href={companyInfo.socialLinks.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#330B17] flex items-center justify-center transition-colors text-white"
+                className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#F5C64D] hover:text-[#521D27] flex items-center justify-center transition-colors text-white"
                 aria-label="YouTube"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">

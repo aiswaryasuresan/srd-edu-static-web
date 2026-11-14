@@ -3,7 +3,7 @@ import { companyInfo } from "@/data/company";
 
 export default function TopBar() {
   return (
-    <div className="bg-[#5B1B2A] text-white/90 text-[11px] sm:text-xs py-2 px-3 sm:px-6 lg:px-8 border-b border-white/10">
+    <div className="bg-[#521D27] text-white/90 text-[11px] sm:text-xs py-2 px-3 sm:px-6 lg:px-8 border-b border-white/10">
       <div className="max-w-[1440px] mx-auto flex justify-between items-center gap-2">
         {/* Desktop/Tablet Left: Social Media Icons matching screenshot */}
         <div className="hidden sm:flex items-center gap-3.5 sm:gap-4 text-white/80 shrink-0">

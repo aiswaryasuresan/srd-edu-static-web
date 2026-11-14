@@ -50,13 +50,13 @@ export default function AboutPreview() {
               We operate under a singular unifying philosophy: <em>Empowering Institutions. Enriching Lives.</em> Educational institutions thrive when their faculty is exceptional, their regulatory documentation is unassailable, their brand is commanding, and their graduates secure meaningful career placements.
             </p>
             <p className="text-xs text-[#241E20] font-medium bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-              <strong className="text-[#4A1525]">Our Corporate Tagline:</strong> {companyInfo.tagline} — encompassing every dimension of institutional development from foundational research and pedagogical advancement to high-impact career placement facilitation.
+              <strong className="text-[#521D27]">Our Corporate Tagline:</strong> {companyInfo.tagline} — encompassing every dimension of institutional development from foundational research and pedagogical advancement to high-impact career placement facilitation.
             </p>
 
             <div className="pt-2">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-sm font-bold text-[#4A1525] hover:text-[#6B1F35] group"
+                className="inline-flex items-center gap-2 text-sm font-bold text-[#521D27] hover:text-[#EFC269] group"
               >
                 <span>Read More About Our Company & Ecosystem</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-[#F5C64D]" />

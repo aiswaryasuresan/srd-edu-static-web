@@ -94,7 +94,7 @@ export default function BrandingMarketingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Photo Showcase */}
             <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-tr from-[#521D27] to-[#802D3C]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-tr from-[#521D27] to-[#521D27]">
                 <div className="relative h-[440px] sm:h-[500px] w-full">
                   <Image
                     src={catalogueImages.buildingFacade}
@@ -744,7 +744,7 @@ export default function BrandingMarketingPage() {
       {/* =========================================================================
           5. OUR MARKETING APPROACH
       ========================================================================= */}
-      <section className="py-16 sm:py-24 bg-gradient-to-br from-[#29252A] via-[#3D141C] to-[#1C0B10] text-white">
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-[#29252A] via-[#521D27] to-[#1C0B10] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 mb-4">

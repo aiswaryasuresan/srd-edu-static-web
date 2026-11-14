@@ -472,7 +472,7 @@ export default function SkillOpportunitiesSinglePage() {
               CONTACT OUR SKILL ADVISORY TEAM
             </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#501C29] font-['Poppins'] mb-3">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#521D27] font-['Poppins'] mb-3">
               Skill Program Consultation & Campus Booking
             </h2>
 
@@ -484,14 +484,14 @@ export default function SkillOpportunitiesSinglePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
               {/* Phone */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-stone-400 block text-[11px] font-bold uppercase">Phone / WhatsApp</span>
                   <a
                     href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                    className="font-bold text-base text-[#501C29] hover:underline"
+                    className="font-bold text-base text-[#521D27] hover:underline"
                   >
                     {companyInfo.contact.phone}
                   </a>
@@ -500,14 +500,14 @@ export default function SkillOpportunitiesSinglePage() {
 
               {/* Email */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <span className="text-stone-400 block text-[11px] font-bold uppercase">Official Email</span>
                   <a
                     href={`mailto:${companyInfo.contact.email}`}
-                    className="font-bold text-sm text-[#501C29] hover:underline block truncate max-w-[200px]"
+                    className="font-bold text-sm text-[#521D27] hover:underline block truncate max-w-[200px]"
                   >
                     {companyInfo.contact.email}
                   </a>
@@ -516,7 +516,7 @@ export default function SkillOpportunitiesSinglePage() {
 
               {/* Website */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm">
                   <Globe className="w-5 h-5" />
                 </div>
                 <div>
@@ -525,7 +525,7 @@ export default function SkillOpportunitiesSinglePage() {
                     href={`https://${companyInfo.contact.website}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-sm text-[#501C29] hover:underline"
+                    className="font-bold text-sm text-[#521D27] hover:underline"
                   >
                     {companyInfo.contact.website}
                   </a>
@@ -534,7 +534,7 @@ export default function SkillOpportunitiesSinglePage() {
 
               {/* Address */}
               <div className="bg-[#FAF8F5] p-5 rounded-2xl border border-stone-200 flex items-start gap-3.5">
-                <div className="w-10 h-10 rounded-xl bg-[#501C29] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-[#521D27] text-[#EFC269] flex items-center justify-center shrink-0 shadow-sm mt-0.5">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -550,7 +550,7 @@ export default function SkillOpportunitiesSinglePage() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
                 href={`tel:${companyInfo.contact.phone.replace(/[^0-9+]/g, '')}`}
-                className="inline-flex items-center gap-2 bg-[#501C29] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
+                className="inline-flex items-center gap-2 bg-[#521D27] hover:bg-[#3d141f] text-[#EFC269] font-bold text-sm px-7 py-3.5 rounded-xl shadow-lg transition-all"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Us Now</span>
@@ -558,7 +558,7 @@ export default function SkillOpportunitiesSinglePage() {
 
               <a
                 href={`mailto:${companyInfo.contact.email}`}
-                className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-[#501C29] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
+                className="inline-flex items-center gap-2 bg-white hover:bg-stone-50 text-[#521D27] font-bold text-sm px-7 py-3.5 rounded-xl border border-stone-300 shadow-sm transition-all"
               >
                 <Mail className="w-4 h-4" />
                 <span>Email Our Team</span>
@@ -567,7 +567,7 @@ export default function SkillOpportunitiesSinglePage() {
 
             {/* Tagline */}
             <div className="mt-8 pt-6 border-t border-stone-200">
-              <p className="text-xs sm:text-sm font-bold text-[#501C29] italic font-serif">
+              <p className="text-xs sm:text-sm font-bold text-[#521D27] italic font-serif">
                 &ldquo;Your Success, Our Mission — Skilled People • Strong Institutions • Brighter Future&rdquo;
               </p>
             </div>

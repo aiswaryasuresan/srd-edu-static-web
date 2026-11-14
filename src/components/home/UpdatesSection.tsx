@@ -17,7 +17,7 @@ export default function UpdatesSection() {
           />
           <Link
             href="/resources"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#4A1525] hover:text-[#6B1F35] shrink-0"
+            className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#521D27] hover:text-[#EFC269] shrink-0"
           >
             <span>View All Resources</span>
             <ArrowRight className="w-4 h-4 text-[#F5C64D]" />
@@ -41,7 +41,7 @@ export default function UpdatesSection() {
                   </span>
                 </div>
 
-                <h3 className="text-base font-bold text-[#241E20] font-['Poppins'] line-clamp-2 hover:text-[#4A1525] transition-colors">
+                <h3 className="text-base font-bold text-[#241E20] font-['Poppins'] line-clamp-2 hover:text-[#521D27] transition-colors">
                   <Link href="/resources">{article.title}</Link>
                 </h3>
 
@@ -57,7 +57,7 @@ export default function UpdatesSection() {
                 </span>
                 <Link
                   href="/resources"
-                  className="text-xs font-bold text-[#4A1525] hover:underline inline-flex items-center gap-1"
+                  className="text-xs font-bold text-[#521D27] hover:underline inline-flex items-center gap-1"
                 >
                   <span>Read Article</span>
                   <ArrowRight className="w-3 h-3 text-[#F5C64D]" />

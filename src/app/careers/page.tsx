@@ -50,7 +50,7 @@ export default function CareersPage() {
             {/* Pathway 1: For Job Seekers & Graduates */}
             <div className="bg-[#F8F7F5] rounded-2xl p-7 sm:p-8 border border-gray-200 flex flex-col justify-between hover:border-[#F5C64D] transition-all">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-[#4A1525] text-white flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-[#521D27] text-white flex items-center justify-center">
                   <GraduationCap className="w-6 h-6 text-[#F5C64D]" />
                 </div>
 
@@ -69,15 +69,15 @@ export default function CareersPage() {
 
                 <div className="space-y-2 pt-2 border-t border-gray-200 text-xs text-[#241E20]">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#4A1525]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#521D27]" />
                     <span>Employability & resume assessment</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#4A1525]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#521D27]" />
                     <span>Notification for regional campus drives</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#4A1525]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#521D27]" />
                     <span>No registration fees for candidates</span>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export default function CareersPage() {
               <div className="pt-6 mt-6 border-t border-gray-200">
                 <a
                   href="#careers-form"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#4A1525] hover:bg-[#6B1F35] text-white text-xs font-bold py-3 px-4 rounded-xl shadow transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#521D27] hover:bg-[#521D27]/90 text-white text-xs font-bold py-3 px-4 rounded-xl shadow transition-colors"
                 >
                   <span>Register as Job Seeker</span>
                   <ArrowRight className="w-4 h-4 text-[#F5C64D]" />
@@ -97,7 +97,7 @@ export default function CareersPage() {
             {/* Pathway 2: For Employers & Campus Recruiters */}
             <div className="bg-[#F8F7F5] rounded-2xl p-7 sm:p-8 border border-gray-200 flex flex-col justify-between hover:border-[#F5C64D] transition-all">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-[#4A1525] text-white flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-[#521D27] text-white flex items-center justify-center">
                   <Building className="w-6 h-6 text-[#F5C64D]" />
                 </div>
 
@@ -116,15 +116,15 @@ export default function CareersPage() {
 
                 <div className="space-y-2 pt-2 border-t border-gray-200 text-xs text-[#241E20]">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#4A1525]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#521D27]" />
                     <span>Pre-evaluated candidate profiles</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#4A1525]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#521D27]" />
                     <span>Demonstration lecture scheduling</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#4A1525]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#521D27]" />
                     <span>Campus recruitment drive coordination</span>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function CareersPage() {
               <div className="pt-6 mt-6 border-t border-gray-200">
                 <a
                   href="#careers-form"
-                  className="w-full inline-flex items-center justify-center gap-2 bg-[#F5C64D] hover:bg-[#DCA42C] text-[#330B17] text-xs font-bold py-3 px-4 rounded-xl shadow transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-[#F5C64D] hover:bg-[#DCA42C] text-[#521D27] text-xs font-bold py-3 px-4 rounded-xl shadow transition-colors"
                 >
                   <span>Submit Institutional Vacancy</span>
                   <ArrowRight className="w-4 h-4" />
