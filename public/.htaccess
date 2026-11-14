@@ -1,0 +1,24 @@
+# SRD Edu Corporation - Apache / cPanel / Shared Hosting Direct Link Configuration
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. If directory exists, ensure trailing slash so index.html loads
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ $1/ [L,R=301]
+
+  # 2. If a corresponding .html file exists, serve it
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
+  # 3. If a directory with index.html exists, serve it
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^(.*)/?$ $1/index.html [L]
+</IfModule>
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
