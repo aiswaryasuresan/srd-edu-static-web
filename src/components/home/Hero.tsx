@@ -3,15 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  ArrowRight,
-  ChevronRight,
-  GraduationCap,
-  Users,
-  Layers,
-  Building2,
-  FileCheck2
-} from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -58,40 +50,6 @@ export default function Hero() {
     }
   ];
 
-  // 5 Square Cards Overlapping the Hero Banner Bottom (Matching Reference Mockup)
-  const squareCards = [
-    {
-      icon: GraduationCap,
-      title: "Institutional Development",
-      description: "End-to-end guidance for building future-ready, compliant academic institutions.",
-      href: "#services"
-    },
-    {
-      icon: Users,
-      title: "Talent & Placement",
-      description: "Connecting students and graduates with verified national and global career opportunities.",
-      href: "/services/placement-assistance"
-    },
-    {
-      icon: Layers,
-      title: "Skill Development",
-      description: "Industry-aligned training programs, vocational trades, and advanced technology accelerators.",
-      href: "/skill-opportunities"
-    },
-    {
-      icon: Building2,
-      title: "Institutional Growth",
-      description: "Strategic branding, student admission outreach, and long-term reputation architecture.",
-      href: "/services/branding-marketing"
-    },
-    {
-      icon: FileCheck2,
-      title: "Compliance Support",
-      description: "Regulatory documentation, university affiliation, accreditation, and legal governance.",
-      href: "/services/documentation-legal"
-    }
-  ];
-
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   }, [slides.length]);
@@ -107,9 +65,7 @@ export default function Hero() {
   const current = slides[currentSlide];
 
   return (
-    <div className="relative w-full bg-white">
-      {/* 1. Main Hero Banner Section */}
-      <section
+    <section
         className="relative w-full min-h-[600px] sm:min-h-[660px] lg:min-h-[720px] xl:min-h-[760px] bg-[#521D27] overflow-hidden flex flex-col justify-between"
       >
         {/* Full-Width Background Imagery with Maximum High Quality */}
@@ -196,7 +152,7 @@ export default function Hero() {
         </div>
 
         {/* 3 Slider Pagination Dots Centered at Bottom of Banner (above floating cards) */}
-        <div className="relative z-30 flex items-center justify-center gap-2.5 pb-20 sm:pb-24 lg:pb-28">
+        <div className="relative z-30 flex items-center justify-center gap-2.5 pb-8 sm:pb-10 lg:pb-12">
           {slides.map((_, idx) => (
             <button
               key={idx}
@@ -212,43 +168,5 @@ export default function Hero() {
         </div>
 
       </section>
-
-      {/* 2. 5 Floating Square Feature Cards Overlapping Hero Banner Bottom (Matching Reference Mockup) */}
-      <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-14 sm:-mt-16 lg:-mt-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
-          {squareCards.map((card) => {
-            const Icon = card.icon;
-            return (
-              <Link
-                key={card.title}
-                href={card.href}
-                className="bg-white rounded-2xl p-5 sm:p-6 shadow-xl border border-stone-200/80 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center justify-between group cursor-pointer"
-              >
-                {/* Centered Top Icon */}
-                <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl bg-[#521D27]/8 group-hover:bg-[#521D27] flex items-center justify-center text-[#521D27] group-hover:text-[#EFC269] transition-all duration-300 shadow-sm mb-3">
-                  <Icon className="w-7 h-7 stroke-[1.8]" />
-                </div>
-
-                {/* Card Title */}
-                <h3 className="text-base sm:text-lg font-bold text-[#1C1917] font-['Poppins'] leading-snug group-hover:text-[#521D27] transition-colors">
-                  {card.title}
-                </h3>
-
-                {/* Card Description */}
-                <p className="text-xs sm:text-[13px] text-[#63595C] leading-relaxed mt-2 font-normal line-clamp-3">
-                  {card.description}
-                </p>
-
-                {/* Card Bottom CTA Link */}
-                <div className="mt-4 pt-3 border-t border-stone-100 w-full flex items-center justify-center gap-1.5 text-xs font-bold text-[#521D27] group-hover:text-[#EFC269] transition-colors">
-                  <span>Learn More</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-    </div>
   );
 }
