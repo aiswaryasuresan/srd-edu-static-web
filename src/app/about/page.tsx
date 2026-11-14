@@ -7,17 +7,13 @@ import {
   Compass,
   ArrowRight,
   CheckCircle2,
-  Users,
   GraduationCap,
-  Sparkles,
-  Briefcase,
   Megaphone,
   UserCheck
 } from "lucide-react";
 import SectionHeading from "@/components/shared/SectionHeading";
 import PageBanner from "@/components/shared/PageBanner";
 import { companyInfo } from "@/data/company";
-import { primaryServices } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "About Us | Complete Human Resource & Institutional Solutions",
@@ -289,46 +285,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. Section: Business Ecosystem */}
-      <section id="business-ecosystem" className="py-16 sm:py-20 bg-[#F8F7F5] border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            badge="Synergistic Model"
-            title="Our Business Ecosystem"
-            subtitle="How each vertical interacts to create an enduring institutional development and staffing fly-wheel."
-            align="center"
-          />
-
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {primaryServices.map((service, idx) => (
-              <div key={service.id} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:border-[#EFC269] hover:shadow-md transition-all">
-                <div className="space-y-3">
-                  <span className="text-[10px] font-bold text-[#B8821B] bg-[#FFF7E6] px-2.5 py-1 rounded uppercase">
-                    Ecosystem Pillar 0{idx + 1}
-                  </span>
-                  <h3 className="text-lg font-bold text-[#241E20] font-['Poppins']">
-                    {service.title}
-                  </h3>
-                  <p className="text-xs text-[#63595C] leading-relaxed">
-                    {service.shortDescription}
-                  </p>
-                </div>
-                <div className="pt-4 mt-4 border-t border-gray-100">
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#521D27] hover:text-[#B8821B] transition-colors"
-                  >
-                    <span>View Pillar Details</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#EFC269]" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 8. Bottom CTA */}
+      {/* 5. Bottom CTA */}
       <section className="py-16 bg-[#521D27] text-white text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <h2 className="text-2xl sm:text-3xl font-bold font-['Poppins']">
